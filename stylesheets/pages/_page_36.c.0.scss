@@ -1,0 +1,44 @@
+#memberstime{
+    .table-body{
+        .table-body__item{
+            .row{
+                .col{
+                    div{
+                        display: flex;
+                    align-items: center;
+                    }
+                }
+            }
+            
+        }
+    }
+    .is-error-status{
+        .c-dropdown__input{
+            background-color: #fff;
+            border: 1px $danger solid;
+            &::after{
+                background-color: rgba(0,0,0,0);;
+            }
+        }
+    }
+}
+#departmenttime{
+    @extend #memberstime;     
+}
+#universalPlan{
+    @extend #memberstime;    
+}
+.l-main-content__statisticsPlan{
+    @extend .l-main-content__planlist;
+    .table-body{
+        .table-body__item{
+            .row{
+                padding: 0 0 0 1.5rem;
+                img{
+                    margin-right: 0.5rem;
+                }
+                }
+        }
+    }
+  
+}

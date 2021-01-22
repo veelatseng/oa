@@ -1,0 +1,259 @@
+#memberstime{
+    .l-main-tabs{
+        margin-bottom: 5px;
+    }
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
+    }
+    .change-card-to-list{
+        .c-card-manhourSearch__userName{
+            display: none;
+        }
+        .c-card-manhourSearch__englishName{
+            display: none;
+        }
+        .listTitle__user{
+            width: 10%;
+        }
+        .listTitle__englishName{
+             width: 60%;
+        }
+        .listTitle__workTime{
+            width: 10%;
+        }
+        .js-c-card__appendUserName{
+            width: 80%;
+            h2{
+                width: 12.5%;
+            }
+            h3{
+                width: 75%;
+            }
+        }
+        .c-card__content{
+            width: 10%;
+        }
+    }
+}
+
+#departmenttime{
+    .l-main-tabs{
+        margin-bottom: 5px;
+    } 
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
+    }
+    .change-card-to-list{
+        .c-card-manhourSearch__userName{
+            display: none;
+        }
+        .c-card-manhourSearch__englishName{
+            display: none;
+        }
+        .listTitle__user{
+            width: 10%;
+        }
+        .listTitle__englishName{
+             width: 60%;
+        }
+        .listTitle__workTime{
+            width: 10%;
+        }
+        .js-c-card__appendUserName{
+            width: 80%;
+            h2{
+                width: 12.5%;
+            }
+            h3{
+                width: 75%;
+            }
+        }
+        .c-card__content{
+            width: 10%;
+        }
+    }
+}
+#supporttime{
+    .l-main-tabs{
+        margin-bottom: 5px;
+    } 
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
+    }
+    .change-card-to-list{
+        .l-main-content-item{
+            .c-card-department{
+            h2{
+                font-weight: 400;
+                font-size: $p;
+                width: 10%;
+            }
+            .c-card__userInformation{
+                display: none;
+            }
+            }
+        }
+        
+        .c-card-manhourSearch__userName{
+            display: none;
+        }
+        .c-card-manhourSearch__englishName{
+            display: none;
+        }
+        .listTitle__user{
+            width: 10%;
+        }
+        .listTitle__englishName{
+             width: 60%;
+        }
+        .listTitle__workTime{
+            width: 10%;
+        }
+        .js-c-card__appendUserName{
+            width: 80%;
+            h2{
+                width: 12.5%;
+            }
+            h3{
+                width: 75%;
+            }
+        }
+        .c-card__content{
+            width: 10%;
+        }
+    }
+}
+#notReachedtime{
+    .l-main-tabs{
+        margin-bottom: 5px;
+    }
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
+    }
+    .change-card-to-list{
+        .c-card-percent__userName{
+            display: none;
+        }
+        .c-card-percent__englishName{
+            display: none;
+        }
+        .c-card-manhourSearch__userName{
+            display: none;
+        }
+        .c-card-manhourSearch__englishName{
+            display: none;
+        }
+        .listTitle__user{
+            width: 10%;
+        }
+        .listTitle__englishName{
+             width: 60%;
+        }
+        .listTitle__workTime{
+            width: 10%;
+        }
+        .js-c-card__appendUserName{
+            width: 80%;
+            h2{
+                width: 12.5%;
+            }
+            h3{
+                width: 75%;
+            }
+        }
+        .c-card__content{
+            width: 10%;
+        }
+        .card-percent__listTitle{
+            .listTitle__englishName{
+                width: 15%;
+            }
+            .listTitle__workTime{
+                width: 15%;
+            }
+            .listTitle__leaveTime{
+                width: 30%;
+            }
+        }
+        .c-card-percent{
+            .js-c-card__appendUserName{
+                width: 35%;
+                h2{
+                    width: 28.5714%;
+                }
+                h3{
+                    width: 42.857142%;
+                }
+            }
+            .c-card__content{
+                width: 55%;
+                .c-card__item{
+                    width: auto;
+                    justify-content: flex-start;
+                    div{
+                        padding: 0;
+                    margin: 0;
+                    }
+                }
+                .c-card-percent__workTime{
+                    width:27.272727% ;
+                     .c-card__item__totaltime{
+                        font-weight: 400;
+                        letter-spacing: 0;
+                    }
+                }
+                .c-card-percent__leaveTime{
+                    width: 54.5454545%;
+                   
+                }
+                .c-card-percent__percent{
+                    width: 18.181818%;
+                }
+            }
+        }
+        .c-card-percentCheck{
+            .c-card-title{
+                span{
+                    right: 30px;
+                    top: 5px;
+                }
+            }
+        }
+
+    }
+    .is-error-status{
+        .c-search-list{
+            .c-search-item{
+                .c-search-item__percentTitle{
+                    color: $danger;
+                }
+                .c-search-item__input{
+                    input{
+                    background-color: #fff;
+                    border: 1px solid $danger;
+                    }
+                    
+                    
+                   
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>page_36.c.0</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="stylesheets/all.css" />
+</head>
+
+<body>
+  <div class="l-container sidebar__is-open">
+    <div class="l-side">
+      <div class="c-sidebar-content">
+        <div class="c-sidebar-content__logo">
+          <img class="hylogo" src="img/o-hylogo.svg" alt="" />
+          <img class="hylogo-sm" src="img/o-only_hylogo.svg" alt="" />
+        </div>
+        <div class="c-sidebar-content__user">
+          <div class="c-sidebar-content__user__item">
+            <div class="chinese__name">蘇紫瑜</div>
+            <div class="english__name">Michelle</div>
+          </div>
+          <div class="c-sidebar-content__user__item">
+            <div class="user__number">A9005</div>
+            <div class="user__department">U20使用者經驗企劃部</div>
+          </div>
+        </div>
+        <div class="c-sidebar-content__listGroup">
+          <div class="c-sidebar-content__list">
+            <div class="c-sidebar-content__list__title menuParent-is-active">
+              <div class="list__title__icon icon-is-active">
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-clock.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-clock-green.svg"
+                  alt=""
+                />
+              </div>
+              <div class="">我的工時紀錄</div>
+            </div>
+            <div class="c-sidebar-content__list__content">
+              <a href="page_1.0.html" class="c-sidebar-content__list__item"
+                >填寫每日工時
+              </a>
+              <a
+                href="page_2.0.html"
+                class="c-sidebar-content__list__item menuItem-is-active"
+                >檢視計畫工時
+              </a>
+            </div>
+          </div>
+          <div class="c-sidebar-content__list">
+            <div class="c-sidebar-content__list__title">
+              <div class="list__title__icon">
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-plan.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-plan-green.svg"
+                  alt=""
+                />
+              </div>
+              <div class="">我的計畫管理</div>
+            </div>
+            <div class="c-sidebar-content__list__content">
+              <a href="page_4.0.html" class="c-sidebar-content__list__item"
+                >常用計畫成員
+              </a>
+              <a href="page_10.0.html" class="c-sidebar-content__list__item"
+                >計畫總覽
+              </a>
+            </div>
+          </div>
+          <div class="c-sidebar-content__list">
+            <div class="c-sidebar-content__list__title">
+              <div class="list__title__icon">
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-report.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-report-green.svg"
+                  alt=""
+                />
+              </div>
+              <div class="">統計報表</div>
+            </div>
+            <div class="c-sidebar-content__list__content">
+              <a href="page_15.a.0.html" class="c-sidebar-content__list__item"
+                >計畫統計
+              </a>
+              <a href="page_26.a.0.html" class="c-sidebar-content__list__item"
+                >警示計畫
+              </a>
+              <a href="page_27.a.0.html" class="c-sidebar-content__list__item"
+                >人員統計
+              </a>
+              <a href="page_36.0.html" class="c-sidebar-content__list__item"
+                >財務統計總覽
+              </a>
+            </div>
+          </div>
+          <div class="c-sidebar-content__list">
+            <div class="c-sidebar-content__list__title">
+              <div class="list__title__icon">
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-management.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-management-green.svg"
+                  alt=""
+                />
+              </div>
+              <div class="">系統管理</div>
+            </div>
+            <div class="c-sidebar-content__list__content">
+              <a href="page_39.0.html" class="c-sidebar-content__list__item"
+                >系統維護
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-sidebar-btnlist">
+        <div class="c-sidebar-btnlist__item c-sidebar-btnlist__logout">
+          <img src="img/o-logout.svg" alt="" />
+          <div class="login-btn">登出</div>
+        </div>
+        <div class="c-sidebar-btnlist__item">
+          <img class="menu-btn" src="img/o-arrowLeft.svg" alt="" />
+          <img class="menu-btn__open" src="img/o-arrowRight.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="l-main">
+      <div class="c-breadcrumb">
+        <div class="">統計報表</div>
+        <div class="">></div>
+        <div class="">財務統計總覽</div>
+        <div class="">></div>
+        <div class="">人員計畫工時</div>
+      </div>
+      <div class="c-general">
+        <div class="c-general__title">
+          <h3 class="">財務統計總覽</h3>
+        </div>
+      </div>
+      <div class="c-tabs">
+        <div class="c-tabs__content">
+          <ul class="c-tabs__item tabs">
+            <li class="c-tabs__item__link tab col s3">
+              <a class="active" href="#memberstime">人員計畫工時</a>
+            </li>
+            <li class="c-tabs__item__link tab col s3">
+              <a href="#departmenttime">部門計畫工時</a>
+            </li>
+            <li class="c-tabs__item__link tab col s3">
+              <a href="#universalPlan">部門共通計畫明細</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="memberstime">
+        <div class="c-search is-error-status">
+          <div class="c-search-list">
+            <div class="c-search-item">
+              <div class="c-search-item__title">工作區間</div>
+              <div class="c-search-item__input">
+                <div class="c-datePicker-months pop-modal">
+                  <div class="c-datePicker__input pop-btn">
+                    <div class="o-input-div"></div>
+                  </div>
+                  <div class="c-datePicker__modal pop-content">
+                    <div class="c-datePicker__group">
+                      <div class="c-datePicker__item">
+                        <div class="c-datePicker__yearPicker">
+                          <img src="img/o-arrowLeft-blue.svg" alt="" />
+                          <div class="">2020</div>
+                          <div class=""></div>
+                        </div>
+                        <div class="c-datePicker__content">
+                          <table>
+                            <tr>
+                              <td>1月</td>
+                              <td>2月</td>
+                              <td>3月</td>
+                            </tr>
+                            <tr>
+                              <td>4月</td>
+                              <td>5月</td>
+                              <td>6月</td>
+                            </tr>
+                            <tr>
+                              <td>7月</td>
+                              <td>8月</td>
+                              <td>9月</td>
+                            </tr>
+                            <tr>
+                              <td>10月</td>
+                              <td>11月</td>
+                              <td>12月</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="c-datePicker__item">
+                        <div class="c-datePicker__yearPicker">
+                          <div class=""></div>
+                          <div class="">2021</div>
+                          <img src="img/o-arrowRight-blue.svg" alt="" />
+                        </div>
+                        <div class="c-datePicker__content">
+                          <table>
+                            <tr>
+                              <td>1月</td>
+                              <td class="is-select-day is-select-range-first">
+                                2月
+                              </td>
+                              <td class="is-select-range-lest">3月</td>
+                            </tr>
+                            <tr>
+                              <td class="is-select-range-first">4月</td>
+                              <td class="is-select-range">5月</td>
+                              <td class="is-select-range-lest">6月</td>
+                            </tr>
+                            <tr>
+                              <td class="is-select-range-first">7月</td>
+                              <td class="is-select-range">8月</td>
+                              <td class="is-select-day is-select-range-lest">
+                                9月
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>10月</td>
+                              <td>11月</td>
+                              <td>12月</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-datePicker__footer">
+                      <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
+                        確認
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-search-item">
+              <div class="c-search-item__title"><span class="text-danger">*</span> 部門</div>
+              <div class=" c-dropdown-departmentCheck pop-modal">
+                <div class="dropdown-input c-dropdown__input pop-btn">
+                  <input type="text" >
+                </div>
+                <div class="dropdown-modal c-dropdown__modal pop-content">
+                  <div class="c-dropdown__title">
+                    <div class="">
+                      <div class="c-dropdown__title__all ">全選</div>
+                    </div>
+                  </div>
+                  <div class="c-dropdown__content__height">
+                    <ul class="c-dropdown__content">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="c-dropdown__footer">
+                    <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                    <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-search-btn">
+            <button class="o-btn-primary waves-effect waves-blue">
+              搜尋
+            </button>
+          </div>
+        </div>
+        <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
+          <div class="l-main-content-table l-main-content__statisticsPlan">
+            <div class="table-thead">
+              <div class="row">
+                <div class="col">統計報表名稱</div>
+              </div>
+            </div>
+            <div class="table-body">
+              <div>
+                <div class="table-body__item">
+                  <div class="row">
+                    <div class="col s11 ">
+                      <div class="">
+                        <img src="../img/o-fileXls.svg" alt="">
+                        <span>202008_202008_人員計畫工時.xls</span>
+                      </div>
+                    </div>
+                    <div class="col s1 ">
+                      <div class="">
+                        <img src="../img/o-export.svg" alt="">
+                        <span>匯出</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="departmenttime">
+        <div class="c-search is-error-status">
+          <div class="c-search-list">
+            <div class="c-search-item">
+              <div class="c-search-item__title">工作區間</div>
+              <div class="c-search-item__input">
+                <div class="c-datePicker-months pop-modal">
+                  <div class="c-datePicker__input pop-btn">
+                    <div class="o-input-div"></div>
+                  </div>
+                  <div class="c-datePicker__modal pop-content">
+                    <div class="c-datePicker__group">
+                      <div class="c-datePicker__item">
+                        <div class="c-datePicker__yearPicker">
+                          <img src="img/o-arrowLeft-blue.svg" alt="" />
+                          <div class="">2020</div>
+                          <div class=""></div>
+                        </div>
+                        <div class="c-datePicker__content">
+                          <table>
+                            <tr>
+                              <td>1月</td>
+                              <td>2月</td>
+                              <td>3月</td>
+                            </tr>
+                            <tr>
+                              <td>4月</td>
+                              <td>5月</td>
+                              <td>6月</td>
+                            </tr>
+                            <tr>
+                              <td>7月</td>
+                              <td>8月</td>
+                              <td>9月</td>
+                            </tr>
+                            <tr>
+                              <td>10月</td>
+                              <td>11月</td>
+                              <td>12月</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="c-datePicker__item">
+                        <div class="c-datePicker__yearPicker">
+                          <div class=""></div>
+                          <div class="">2021</div>
+                          <img src="img/o-arrowRight-blue.svg" alt="" />
+                        </div>
+                        <div class="c-datePicker__content">
+                          <table>
+                            <tr>
+                              <td>1月</td>
+                              <td class="is-select-day is-select-range-first">
+                                2月
+                              </td>
+                              <td class="is-select-range-lest">3月</td>
+                            </tr>
+                            <tr>
+                              <td class="is-select-range-first">4月</td>
+                              <td class="is-select-range">5月</td>
+                              <td class="is-select-range-lest">6月</td>
+                            </tr>
+                            <tr>
+                              <td class="is-select-range-first">7月</td>
+                              <td class="is-select-range">8月</td>
+                              <td class="is-select-day is-select-range-lest">
+                                9月
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>10月</td>
+                              <td>11月</td>
+                              <td>12月</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-datePicker__footer">
+                      <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
+                        確認
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-search-item">
+              <div class="c-search-item__title"><span class="text-danger">*</span> 部門</div>
+              <div class=" c-dropdown-departmentCheck pop-modal">
+                <div class="dropdown-input c-dropdown__input pop-btn">
+                  <input type="text">
+                </div>
+                <div class="dropdown-modal c-dropdown__modal pop-content">
+                  <div class="c-dropdown__title">
+                    <div class="">
+                      <div class="c-dropdown__title__all ">全選</div>
+                    </div>
+                  </div>
+                  <div class="c-dropdown__content__height">
+                    <ul class="c-dropdown__content">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="c-dropdown__footer">
+                    <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                    <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-search-btn">
+            <button class="o-btn-primary waves-effect waves-blue">
+              搜尋
+            </button>
+          </div>
+        </div>
+        <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
+          <div class="l-main-content-table l-main-content__statisticsPlan">
+            <div class="table-thead">
+              <div class="row">
+                <div class="col">統計報表名稱</div>
+              </div>
+            </div>
+            <div class="table-body">
+              <div>
+                <div class="table-body__item">
+                  <div class="row">
+                    <div class="col s11 ">
+                      <div class="">
+                        <img src="../img/o-fileXls.svg" alt="">
+                        <span>202008_202008_人員計畫工時.xls</span>
+                      </div>
+                    </div>
+                    <div class="col s1 ">
+                      <div class="">
+                        <img src="../img/o-export.svg" alt="">
+                        <span>匯出</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-body__item">
+                  <div class="row">
+                    <div class="col s11 ">
+                      <div class="">
+                        <img src="../img/o-fileXls.svg" alt="">
+                        <span>202008_202008_人員計畫工時.xls</span>
+                      </div>
+                    </div>
+                    <div class="col s1 ">
+                      <div class="">
+                        <img src="../img/o-export.svg" alt="">
+                        <span>匯出</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="universalPlan">
+        <div class="c-search is-error-status">
+          <div class="c-search-list">
+            <div class="c-search-item">
+              <div class="c-search-item__title">工作區間</div>
+              <div class="c-search-item__input">
+                <div class="c-datePicker-months pop-modal">
+                  <div class="c-datePicker__input pop-btn">
+                    <div class="o-input-div"></div>
+                  </div>
+                  <div class="c-datePicker__modal pop-content">
+                    <div class="c-datePicker__group">
+                      <div class="c-datePicker__item">
+                        <div class="c-datePicker__yearPicker">
+                          <img src="img/o-arrowLeft-blue.svg" alt="" />
+                          <div class="">2020</div>
+                          <div class=""></div>
+                        </div>
+                        <div class="c-datePicker__content">
+                          <table>
+                            <tr>
+                              <td>1月</td>
+                              <td>2月</td>
+                              <td>3月</td>
+                            </tr>
+                            <tr>
+                              <td>4月</td>
+                              <td>5月</td>
+                              <td>6月</td>
+                            </tr>
+                            <tr>
+                              <td>7月</td>
+                              <td>8月</td>
+                              <td>9月</td>
+                            </tr>
+                            <tr>
+                              <td>10月</td>
+                              <td>11月</td>
+                              <td>12月</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="c-datePicker__item">
+                        <div class="c-datePicker__yearPicker">
+                          <div class=""></div>
+                          <div class="">2021</div>
+                          <img src="img/o-arrowRight-blue.svg" alt="" />
+                        </div>
+                        <div class="c-datePicker__content">
+                          <table>
+                            <tr>
+                              <td>1月</td>
+                              <td class="is-select-day is-select-range-first">
+                                2月
+                              </td>
+                              <td class="is-select-range-lest">3月</td>
+                            </tr>
+                            <tr>
+                              <td class="is-select-range-first">4月</td>
+                              <td class="is-select-range">5月</td>
+                              <td class="is-select-range-lest">6月</td>
+                            </tr>
+                            <tr>
+                              <td class="is-select-range-first">7月</td>
+                              <td class="is-select-range">8月</td>
+                              <td class="is-select-day is-select-range-lest">
+                                9月
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>10月</td>
+                              <td>11月</td>
+                              <td>12月</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-datePicker__footer">
+                      <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
+                        確認
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-search-item">
+              <div class="c-search-item__title"><span class="text-danger">*</span> 部門</div>
+              <div class=" c-dropdown-departmentCheck pop-modal">
+                <div class="dropdown-input c-dropdown__input pop-btn">
+                  <input type="text">
+                </div>
+                <div class="dropdown-modal c-dropdown__modal pop-content">
+                  <div class="c-dropdown__title">
+                    <div class="">
+                      <div class="c-dropdown__title__all ">全選</div>
+                    </div>
+                  </div>
+                  <div class="c-dropdown__content__height">
+                    <ul class="c-dropdown__content">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-使用者經驗企劃部</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>U20-U20-使用者經驗用者用者企劃部</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="c-dropdown__footer">
+                    <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                    <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-search-btn">
+            <button class="o-btn-primary waves-effect waves-blue">
+              搜尋
+            </button>
+          </div>
+        </div>
+        <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
+          <div class="l-main-content-table l-main-content__statisticsPlan">
+            <div class="table-thead">
+              <div class="row">
+                <div class="col">統計報表名稱</div>
+              </div>
+            </div>
+            <div class="table-body">
+              <div>
+                <div class="table-body__item">
+                  <div class="row">
+                    <div class="col s11 ">
+                      <div class="">
+                        <img src="../img/o-fileXls.svg" alt="">
+                        <span>202008_202008_人員計畫工時.xls</span>
+                      </div>
+                    </div>
+                    <div class="col s1 ">
+                      <div class="">
+                        <img src="../img/o-export.svg" alt="">
+                        <span>匯出</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 視窗 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/dragula.js"></script>
+    <script src="js/compontent.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/page_function.js"></script>
+</body>
+
+</html>

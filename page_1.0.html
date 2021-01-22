@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page_1.0</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/all.css" />
+  </head>
+
+  <body>
+    <div class="l-container sidebar__is-open">
+      <div class="l-side">
+        <div class="c-sidebar-content">
+          <div class="c-sidebar-content__logo">
+            <img class="hylogo" src="img/o-hylogo.svg" alt="" />
+            <img class="hylogo-sm" src="img/o-only_hylogo.svg" alt="" />
+          </div>
+          <div class="c-sidebar-content__user">
+            <div class="c-sidebar-content__user__item">
+              <div class="chinese__name">蘇紫瑜</div>
+              <div class="english__name">Michelle</div>
+            </div>
+            <div class="c-sidebar-content__user__item">
+              <div class="user__number">A9005</div>
+              <div class="user__department">U20使用者經驗企劃部</div>
+            </div>
+          </div>
+          <div class="c-sidebar-content__listGroup">
+            <div class="c-sidebar-content__list">
+              <div class="c-sidebar-content__list__title">
+                <div class="list__title__icon icon-is-active">
+                  <img
+                    class="list__title__icon__default"
+                    src="img/o-clock.svg"
+                    alt=""
+                  />
+                  <img
+                    class="list__title__icon__active"
+                    src="img/o-clock-green.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="">我的工時紀錄</div>
+              </div>
+              <div class="c-sidebar-content__list__content">
+                <a
+                  href="page_1.0.html"
+                  class="c-sidebar-content__list__item menuItem-is-active"
+                  >填寫每日工時
+                </a>
+                <a href="page_2.0.html" class="c-sidebar-content__list__item"
+                  >檢視計畫工時
+                </a>
+              </div>
+            </div>
+            <div class="c-sidebar-content__list">
+              <div class="c-sidebar-content__list__title">
+                <div class="list__title__icon">
+                  <img
+                    class="list__title__icon__default"
+                    src="img/o-plan.svg"
+                    alt=""
+                  />
+                  <img
+                    class="list__title__icon__active"
+                    src="img/o-plan-green.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="">我的計畫管理</div>
+              </div>
+              <div class="c-sidebar-content__list__content">
+                <a href="page_4.0.html" class="c-sidebar-content__list__item"
+                  >常用計畫成員
+                </a>
+                <a href="page_10.0.html" class="c-sidebar-content__list__item"
+                  >計畫總覽
+                </a>
+              </div>
+            </div>
+            <div class="c-sidebar-content__list">
+              <div class="c-sidebar-content__list__title">
+                <div class="list__title__icon">
+                  <img
+                    class="list__title__icon__default"
+                    src="img/o-report.svg"
+                    alt=""
+                  />
+                  <img
+                    class="list__title__icon__active"
+                    src="img/o-report-green.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="">統計報表</div>
+              </div>
+              <div class="c-sidebar-content__list__content">
+                <a href="page_15.a.0.html" class="c-sidebar-content__list__item"
+                  >計畫統計
+                </a>
+                <a href="page_26.a.0.html" class="c-sidebar-content__list__item"
+                  >警示計畫
+                </a>
+                <a href="page_27.a.0.html" class="c-sidebar-content__list__item"
+                  >人員統計
+                </a>
+                <a href="page_36.0.html" class="c-sidebar-content__list__item"
+                  >財務統計總覽
+                </a>
+              </div>
+            </div>
+            <div class="c-sidebar-content__list">
+              <div class="c-sidebar-content__list__title">
+                <div class="list__title__icon">
+                  <img
+                    class="list__title__icon__default"
+                    src="img/o-management.svg"
+                    alt=""
+                  />
+                  <img
+                    class="list__title__icon__active"
+                    src="img/o-management-green.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="">系統管理</div>
+              </div>
+              <div class="c-sidebar-content__list__content">
+                <a href="page_39.0.html" class="c-sidebar-content__list__item"
+                  >系統維護
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-sidebar-btnlist">
+          <div class="c-sidebar-btnlist__item c-sidebar-btnlist__logout">
+            <img src="img/o-logout.svg" alt="" />
+            <div class="login-btn">登出</div>
+          </div>
+          <div class="c-sidebar-btnlist__item">
+            <img class="menu-btn" src="img/o-arrowLeft.svg" alt="" />
+            <img class="menu-btn__open" src="img/o-arrowRight.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="l-main">
+        <div class="c-breadcrumb">
+          <div class="">我的計畫管理</div>
+          <div class="">></div>
+          <div class="">待建WBS計畫</div>
+        </div>
+        <div class="c-general">
+          <div class="c-general__title"><h3 class="">計畫統計</h3></div>
+        </div>
+        <div class="c-writeHours">
+          <div class="c-writeHours-title">
+            <div
+              class="c-writeHours-title__item is-no-this-months"
+              data-num="1"
+            >
+              <div class="c-writeHours-title__item__date">
+                <div>08/31</div>
+                <span>ㄧ</span>
+              </div>
+              <div class="c-writeHours-title__item__hours">
+                <div class="text">已填<br />時數</div>
+                <div class="hours">8</div>
+              </div>
+              <div class="c-writeHours-title__content"></div>
+            </div>
+            <div class="c-writeHours-title__item" data-num="2">
+              <div class="c-writeHours-title__item__date">
+                <div class="">09/01</div>
+                <span>二</span>
+              </div>
+              <div class="c-writeHours-title__item__hours">
+                <div class="text">已填<br />時數</div>
+                <div class="hours"><img src="img/o-dayoff.svg" alt="" /></div>
+              </div>
+              <div class="c-writeHours-title__content">
+                <div class="">請假8小時</div>
+              </div>
+            </div>
+            <div class="c-writeHours-title__item" data-num="3">
+              <div class="c-writeHours-title__item__date">
+                09/01 <span>三</span>
+              </div>
+              <div class="c-writeHours-title__item__hours">
+                <div class="text">已填<br />時數</div>
+                <div class="hours">0</div>
+              </div>
+              <div class="c-writeHours-title__content">
+                <div class="c-writeHours-title__tag">中秋節</div>
+              </div>
+            </div>
+            <div class="c-writeHours-title__item" data-num="4">
+              <div class="c-writeHours-title__item__date">
+                09/03 <span>四</span>
+              </div>
+              <div class="c-writeHours-title__item__hours">
+                <div class="text">已填<br />時數</div>
+                <div class="hours">3 <span>.5</span></div>
+              </div>
+              <div class="c-writeHours-title__content">
+                <div class="">請假4小時</div>
+                <div class="text-danger">尚有0.5小時未填</div>
+              </div>
+            </div>
+            <div class="c-writeHours-title__item is-today-tag" data-num="5">
+              <div class="c-writeHours-title__item__date">
+                09/04 <span>五</span>
+              </div>
+              <div class="c-writeHours-title__item__hours">
+                <div class="text">已填<br />時數</div>
+                <div class="hours">0</div>
+              </div>
+              <div class="c-writeHours-title__content">
+                <div class="text-danger">尚有8小時未填</div>
+              </div>
+            </div>
+            <div class="c-writeHours-title__item is-active" data-num="6">
+              <div class="c-writeHours-title__item__date">
+                09/05 <span>六</span>
+              </div>
+              <div class="c-writeHours-title__item__hours">
+                <div class="text">已填<br />時數</div>
+                <div class="hours">0</div>
+              </div>
+              <div class="c-writeHours-title__content">
+                <div class="">未開放填寫</div>
+              </div>
+            </div>
+            <div class="c-writeHours-title__item" data-num="7">
+              <div class="c-writeHours-title__item__date">
+                09/06 <span>日</span>
+              </div>
+              <div class="c-writeHours-title__item__hours">
+                <div class="text">已填<br />時數</div>
+                <div class="hours">0</div>
+              </div>
+              <div class="c-writeHours-title__content">
+                <div class="">未開放填寫</div>
+              </div>
+            </div>
+          </div>
+          <!-- 下半部 -->
+          <div class="c-writeHours-content">
+            <div class="c-writeHours-content__select row">
+              <div class="col s4">
+                <div class="input-title"><span>* </span>計劃名稱</div>
+                <div class="input-field c-dropdown-planContent">
+                  <select class="c-dropdown-plan-select">
+                    <option value="" disabled selected>請選擇計劃名稱</option>
+                    <optgroup label="籌備中">
+                      <option value="1">
+                        2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                      </option>
+                      <option value="2">2020智慧空間管理理系</option>
+                      <option value="3">2020智慧空間管理理系慧空慧空</option>
+                      <option value="4">
+                        2020智慧空間管理理慧空慧空慧空慧空系
+                      </option>
+                    </optgroup>
+                    <optgroup label="執行中">
+                      <option value="5">2020智慧空間管理理慧空系</option>
+                      <option value="6">2020智慧空間管理理慧空系</option>
+                      <option value="7">2020智慧空間管理理慧空系</option>
+                      <option value="8">2020智慧空間管理理慧空系</option>
+                    </optgroup>
+                    <optgroup label="保固中">
+                      <option value="9">2020智慧空間管理理慧空系</option>
+                      <option value="10">
+                        2020智慧空間管理理慧空慧空慧空慧空系
+                      </option>
+                      <option value="11">2020智慧空間管理理系慧空慧空</option>
+                      <option value="12">
+                        2020智慧空間管理理慧空慧空慧空慧空系
+                      </option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="input-title"><span>* </span>工作階段</div>
+                <div class="input-field c-dropdown-plan">
+                  <select class="c-dropdown-plan-select">
+                    <option value="" disabled selected>請選擇工作階段</option>
+                    <option value="1">1.1-工作階段或工作內容</option>
+                    <option value="2">1.1-工作階段或工作內容</option>
+                    <option value="3">1.1-工作階段或工作內容</option>
+                    <option value="4">1.1-工作階段或工作內容</option>
+                    <option value="5">1.1-工作階段或工作內容</option>
+                    <option value="6">1.1-工作階段或工作內容</option>
+                    <option value="7">1.1-工作階段或工作內容</option>
+                    <option value="8">1.1-工作階段或工作內容</option>
+                    <option value="9">1.1-工作階段或工作內容</option>
+                    <option value="10">1.1-工作階段或工作內容</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col s2">
+                <div class="input-title"><span>* </span>工作內容</div>
+                <div class="input-field c-dropdown-plan">
+                  <select class="c-dropdown-plan-select">
+                    <option value="" disabled selected>請選擇工作內容</option>
+                    <option value="1">1.1-工作階段或工作內容</option>
+                    <option value="2">1.1-工作階段或工作內容</option>
+                    <option value="3">1.1-工作階段或工作內容</option>
+                    <option value="4">1.1-工作階段或工作內容</option>
+                    <option value="5">1.1-工作階段或工作內容</option>
+                    <option value="6">1.1-工作階段或工作內容</option>
+                    <option value="7">1.1-工作階段或工作內容</option>
+                    <option value="8">1.1-工作階段或工作內容</option>
+                    <option value="9">1.1-工作階段或工作內容</option>
+                    <option value="10">1.1-工作階段或工作內容</option>
+                  </select>
+                </div>
+              </div>
+              <div class="hoursInput col s1">
+                <div class="input-title"><span>* </span>時數</div>
+                <div class="">
+                  <input class="" type="text" />
+                </div>
+              </div>
+              <div class="otherInput col s2">
+                <div class="input-title">備註</div>
+                <div class="">
+                  <input class="" type="text" />
+                </div>
+              </div>
+              <div class="col s1">
+                <button class="o-btn-primary waves-effect waves-blue">
+                  新增
+                </button>
+              </div>
+            </div>
+            <div class="c-writeHours-content__list" data-content="1">
+              <div class="c-writeHours-content__text">
+                立即填寫今日的工作內容吧！
+              </div>
+            </div>
+            <div class="c-writeHours-content__list" data-content="2">
+              <div class="c-writeHours-content__text">
+                立即填寫今日的工作內容吧！1
+              </div>
+            </div>
+            <div class="c-writeHours-content__list" data-content="3">
+              <div class="c-writeHours-content__text">
+                立即填寫今日的工作內容吧！2
+              </div>
+            </div>
+            <div class="c-writeHours-content__list" data-content="4">
+              <div class="c-writeHours-content__text">
+                立即填寫今日的工作內容吧！3
+              </div>
+            </div>
+            <div class="c-writeHours-content__list" data-content="5">
+              <div class="c-writeHours-content__text">
+                立即填寫今日的工作內容吧！4
+              </div>
+            </div>
+            <div class="c-writeHours-content__list is-active" data-content="6">
+              <div class="row c-writeHours-content__item">
+                <div class="c-writeHours-content__item__title col s4">
+                  2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                </div>
+                <div class="col s2">系統開發與設計</div>
+                <div class="col s2">網站介面規劃與設計</div>
+                <div class="col s1">2</div>
+                <div class="col s2">無</div>
+                <div class="col s1 c-writeHours-content__btnGroup">
+                  <button class="">
+                    <img src="img/o-edit.svg" alt="" />
+                  </button>
+                  <button class="">
+                    <img src="img/o-delete.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="row c-writeHours-content__item">
+                <div class="col s4">2020智慧空間管理系..</div>
+                <div class="col s2">系統開發與設計</div>
+                <div class="col s2">網站介面規劃與設計</div>
+                <div class="col s1">2</div>
+                <div class="col s2">無</div>
+                <div class="col s1 c-writeHours-content__btnGroup">
+                  <button class="">
+                    <img src="img/o-edit.svg" alt="" />
+                  </button>
+                  <button class="">
+                    <img src="img/o-delete.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="row c-writeHours-content__item">
+                <div class="col s4">2020智慧空間管理系..</div>
+                <div class="col s2">系統開發與設計</div>
+                <div class="col s2">網站介面規劃與設計</div>
+                <div class="col s1">2</div>
+                <div class="col s2">無</div>
+                <div class="col s1 c-writeHours-content__btnGroup">
+                  <button class="">
+                    <img src="img/o-edit.svg" alt="" />
+                  </button>
+                  <button class="">
+                    <img src="img/o-delete.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="row c-writeHours-content__select">
+                <div class="col s4">
+                  <div class="input-field c-dropdown-planContent">
+                    <select class="c-dropdown-plan-select">
+                      <option value="" disabled selected>請選擇計劃名稱</option>
+                      <optgroup label="籌備中">
+                        <option value="1">
+                          2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                        </option>
+                        <option value="2">2020智慧空間管理理系</option>
+                        <option value="3">2020智慧空間管理理系慧空慧空</option>
+                        <option value="4">
+                          2020智慧空間管理理慧空慧空慧空慧空系
+                        </option>
+                      </optgroup>
+                      <optgroup label="執行中">
+                        <option value="5">2020智慧空間管理理慧空系</option>
+                        <option value="6">2020智慧空間管理理慧空系</option>
+                        <option value="7">2020智慧空間管理理慧空系</option>
+                        <option value="8">2020智慧空間管理理慧空系</option>
+                      </optgroup>
+                      <optgroup label="保固中">
+                        <option value="9">2020智慧空間管理理慧空系</option>
+                        <option value="10">
+                          2020智慧空間管理理慧空慧空慧空慧空系
+                        </option>
+                        <option value="11">2020智慧空間管理理系慧空慧空</option>
+                        <option value="12">
+                          2020智慧空間管理理慧空慧空慧空慧空系
+                        </option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+                <div class="col s2">
+                  <div class="input-field c-dropdown-plan">
+                    <select class="c-dropdown-plan-select">
+                      <option value="" disabled selected>請選擇工作階段</option>
+                      <option value="1">1.1-工作階段或工作內容</option>
+                      <option value="2">1.1-工作階段或工作內容</option>
+                      <option value="3">1.1-工作階段或工作內容</option>
+                      <option value="4">1.1-工作階段或工作內容</option>
+                      <option value="5">1.1-工作階段或工作內容</option>
+                      <option value="6">1.1-工作階段或工作內容</option>
+                      <option value="7">1.1-工作階段或工作內容</option>
+                      <option value="8">1.1-工作階段或工作內容</option>
+                      <option value="9">1.1-工作階段或工作內容</option>
+                      <option value="10">1.1-工作階段或工作內容</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col s2">
+                  <div class="input-field c-dropdown-plan">
+                    <select class="c-dropdown-plan-select">
+                      <option value="" disabled selected>請選擇工作內容</option>
+                      <option value="1">1.1-工作階段或工作內容</option>
+                      <option value="2">1.1-工作階段或工作內容</option>
+                      <option value="3">1.1-工作階段或工作內容</option>
+                      <option value="4">1.1-工作階段或工作內容</option>
+                      <option value="5">1.1-工作階段或工作內容</option>
+                      <option value="6">1.1-工作階段或工作內容</option>
+                      <option value="7">1.1-工作階段或工作內容</option>
+                      <option value="8">1.1-工作階段或工作內容</option>
+                      <option value="9">1.1-工作階段或工作內容</option>
+                      <option value="10">1.1-工作階段或工作內容</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="hoursInput col s1">
+                  <div class="">
+                    <input class="" type="text" />
+                  </div>
+                </div>
+                <div class="otherInput col s2">
+                  <div class="">
+                    <input class="" type="text" />
+                  </div>
+                </div>
+                <div class="col s1 c-writeHours-content__btnGroup">
+                  <button class="">
+                    <img src="img/o-cencel.svg" alt="" />
+                  </button>
+                  <button class="">
+                    <img src="img/o-confirm.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="c-writeHours-content__list" data-content="7">
+              <div class="c-writeHours-content__text">
+                立即填寫今日的工作內容吧！6
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="l-side-left">
+        <div class="c-submenu">
+          <button type="button" class="c-submenu-btn waves-effect waves-blue">
+            <img src="img/o-arrowRight-gray.svg" alt="" />
+          </button>
+          <div class="c-submenu-content">
+            <div class="c-submenu-content__calendar">
+              <div class="calendar-wrapper">
+                <div class="calendar-wrapper__title">
+                  <div class="calendar_month"></div>
+                  <div class="calendar_btn">
+                    <button id="btnPrev" class="waves-effect waves-blue">
+                      <img src="img/o-arrowLeft-blue.svg" alt="" />
+                    </button>
+                    <button id="btnNext" class="waves-effect waves-blue">
+                      <img src="img/o-arrowRight-blue.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div id="divCal"></div>
+              </div>
+            </div>
+            <div class="c-submenu-content__cardList">
+              <div class="cardList__title">最近填寫工作</div>
+              <div class="cardList__content">
+                <div class="c-card-planHotkey">
+                  <div class="c-card__content">
+                    <div class="c-card__tag">
+                      <span class="">2020WEV24H</span>
+                    </div>
+                    <h2>
+                      2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+                    </h2>
+                    <div class="c-card__development">
+                      <div class="c-card__development__item">
+                        <img src="img/o-branch.svg" alt="" />
+                        <span>系統開發與設計統...</span>
+                      </div>
+                      <div class="c-card__development__item__subproject">
+                        <img src="img/o-branch.svg" alt="" />
+                        <span>網站頁面規劃與...</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-card-planHotkey__btn">加入此工作</div>
+                </div>
+                <div class="c-card-planHotkey">
+                  <div class="c-card__content">
+                    <div class="c-card__tag">
+                      <span class="">2020WEV24H</span>
+                    </div>
+                    <h2>
+                      2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+                    </h2>
+                    <div class="c-card__development">
+                      <div class="c-card__development__item">
+                        <img src="img/o-branch.svg" alt="" />
+                        <span>系統開發與設計統...</span>
+                      </div>
+                      <div class="c-card__development__item__subproject">
+                        <img src="img/o-branch.svg" alt="" />
+                        <span>網站頁面規劃與...</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-card-planHotkey__btn">加入此工作</div>
+                </div>
+                <div class="c-card-planHotkey">
+                  <div class="c-card__content">
+                    <div class="c-card__tag">
+                      <span class="">2020WEV24H</span>
+                    </div>
+                    <h2>
+                      2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+                    </h2>
+                    <div class="c-card__development">
+                      <div class="c-card__development__item">
+                        <img src="img/o-branch.svg" alt="" />
+                        <span>系統開發與設計統...</span>
+                      </div>
+                      <div class="c-card__development__item__subproject">
+                        <img src="img/o-branch.svg" alt="" />
+                        <span>網站頁面規劃與...</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-card-planHotkey__btn">加入此工作</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/materialize.js"></script>
+
+    <script src="js/compontent.js"></script>
+  </body>
+</html>

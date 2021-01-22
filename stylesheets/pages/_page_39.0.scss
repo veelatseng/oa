@@ -1,0 +1,131 @@
+
+ .l-main-content__cardGroup{
+        display: flex;
+        .l-main-content__cardGroup__item {
+            display: flex;
+            margin-right:1rem;
+            height: 180px;
+            width: 50%;
+            &:last-child{
+                margin-right:0;
+            }
+        }
+        .s12{
+            width: 100%;
+        }
+        .s6{
+            width: 50%;
+        }
+        .s3{
+            width: 25%;
+        }
+}
+.l-main-content__card{
+    @extend .card;
+    padding:1rem;
+    margin:0.1rem 1rem 1rem 0;
+    border-radius: $card-lableGroup;
+    &:last-child{
+        margin-right:0;
+    }
+    .l-main-content__title{
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .l-main-content__planlist{
+        .table-body{
+            height: 355px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            .o-input{
+                height: 45px;
+                input{
+                    height: 45px;
+                }
+            }
+        }
+        
+    }
+    .l-main-content__addMember{
+        max-height:180px;
+        overflow-y: scroll;
+    }
+
+    .l-main-content__maintain{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .l-main-content__maintain__text{
+            font-family: $font-family;
+            font-size: $p;
+            color: $gray1;
+            padding:0 0.5rem;
+            padding-bottom: 1rem;
+            white-space: nowrap;
+        }
+        .l-main-content__maintain__num{
+            font-family: $english-font;
+            font-size:60px ;
+            font-weight: 700;
+            color: $hyweb-blue;
+            .o-input{
+                input{
+                    width: 80px;
+                    height: 60px;
+                    font-family: $english-font;
+                    font-weight: 700;
+                    padding: 0.5rem;
+                    font-size:60px ;
+                    color: $hyweb-blue;
+                }
+            }
+            .o-input-lg{
+                input{
+                    width: 120px;
+                }   
+            }
+      
+        }
+    }
+}
+.l-main-content__switchCard{
+    @extend .l-main-content__card;
+    padding: 0;
+    .l-main-content__switchTitle{
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .l-main-content__switch{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 0;
+        height: calc(100% - 59.5px);
+        .o-switch{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .lever{
+                margin:0;
+            }
+
+        }
+        .l-main-content__switch__text{  
+            display: flex;
+            align-self: flex-end;
+            justify-content: center;
+            padding: 1rem 0;
+            width: 100%;
+            background-color:$gray4;
+            border-radius: 0 0 $card-lableGroup $card-lableGroup;
+        }
+        .is-switch-active{
+            background:$hy-background;
+            color: #fff;
+        }
+        
+    }
+}

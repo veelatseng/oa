@@ -1,0 +1,127 @@
+//====================
+// Utility 通用
+//====================
+//color
+$primary:blue;
+$secondary:#ccc;
+$red:#FB5B29;
+$danger:$red;
+$sec2:#BAD4E5;
+$sec3:#F7FBFF;
+$gray1:#042340;
+$gray2:#1E4160;//#828282;
+$gray3:#8495A4;//#BDBDBD;
+$gray4:#D2DAE0;
+$gray5:#EDF2F5;
+$gray-blue:$sec2;
+$hyweb-blue:#0156A2;
+$hyweb-lighblue:#E2F1FE;
+$hyweb-green:rgba(31, 235, 186, 1);
+$hyweb-waterblue:$sec3;
+
+$hyweb-blue-light:rgba(186, 217, 245, 0.2);
+$hy-background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;// linear-gradient(180deg, rgba(44, 255, 255, 0.35) 0%, rgba(22, 151, 180, 0) 66.15%), #0156A2;
+$hy-background-danger:linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+$hy-background-green: linear-gradient(180deg, #64FFEC 0%, rgba(255, 255, 255, 0) 100%), #1FEBBA;
+
+$sidebar-background:$hy-background;
+$sidebar-user-background:$sec3;
+$sidebar-active-background:$hy-background-green;
+$sidebar-hover-background:$hyweb-blue;
+
+$accordion-header-background:$hyweb-lighblue;
+$accordion-body-text:$gray2;
+$accordion-body-background:$sec3;
+
+$fileInput-upload__title:$gray2;
+$fileInput_border:$sec2;
+
+$toast-header-background:$hy-background;
+
+$card-lablePerson-background:$sec3;
+$card-lablePerson-title-background:$hyweb-lighblue;
+$card-lablePerson-title:$hyweb-blue;
+//margin
+$m:10px;
+$m-2:$m*2;
+$m-3:$m*3;
+$m-4:$m*4;
+
+//padding
+$pd:10px;
+$pd-2:$pd*2;//20px
+$pd-3:$pd*3;//30px
+$pd-4:$pd*4;//40px
+$pd-5:$pd*5;//50px
+
+//border-radius
+$card-radius:20px;
+$card-lablePerson-radius:8px;
+$card-lableGroup:10px;
+$tag-radius:5px;
+$tag-radius-l:10px;
+$btn-radius:40px;
+$accordion-item-radius:8px;
+$sidebar-months-item-radius:8px;
+$toast-radius:10px;
+$modal-radius:10px;
+$dropdown-radius:10px;
+$select-radius:5px;
+$input-radius:5px;
+$tab-radius:10px;
+$table-radius:10px;
+$list-radius:10px;
+$textarea-radius:10px;
+$upload-radius:10px;
+//fontfamily
+$english-font:'Baloo 2', cursive,'Noto Sans TC';
+$font-family:'Noto Sans TC',"sans-serif";
+//text
+$font-size:12px;
+$font-size-m:14px;
+$font-size-l:18px;
+
+
+$h1:36px;
+$h2:22px;
+//$h3:22px;
+
+$p:16px;//$font-size*1.5;
+$a:14px;//$font-size*1.33;//14px
+
+//填寫工時
+$writeHours-title-hours:60px;
+$writeHours-title-hours-s:42px;
+
+//menu
+$chinese-name:18px;
+
+//日曆文字
+$calendar-date-font:$p;
+$calendar-title-font:$font-size-l; 
+//裝飾文字
+//$decoration-font-size:$font-size;
+
+//box-shadow
+$box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+
+//刪減字符
+@mixin ellipsisText{
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+//刪減字符雙行
+@mixin db_ellipsisText{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height:45px;
+
+}

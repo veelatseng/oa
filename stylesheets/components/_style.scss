@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC'," sans-serif";
+}
+::-webkit-input-placeholder { /* Edge */
+  color: $gray3;
+  font-weight: 400;
+  font-family:$font-family;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: $gray3;
+  font-weight: 400;
+  font-family:$font-family;
+
+}
+
+::placeholder {
+  color: $gray3;
+  font-weight: 400;
+  font-family:$font-family;
+
+}
+
+// 設定scrollbar背景色
+// body::-webkit-scrollbar,body::-webkit-scrollbar-track {
+//   background-color: rgba(0,0,0,.4)
+// }
+// // 設定scrollbar寬度
+// body::-webkit-scrollbar {
+//   width: 10px
+// }
+// // 設定scrollbar實體顏色，可設定圓角
+// body::-webkit-scrollbar-thumb {
+//   border-radius: 0px;
+//   background-color: salmon;
+// }

@@ -1,0 +1,21 @@
+.l-main-content-title{
+    .l-main-content-text-sm{
+        font-size: $p;
+        font-family: $font-family;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        img{
+            margin-right: 0.5rem;
+        }
+    }
+}
+.l-main-have-nav-height{
+    height:calc(100vh - 260px);
+    overflow-y: scroll;
+}
+.toast-join-position{
+    position: fixed;
+    bottom:30px;
+    right: 20px;
+}

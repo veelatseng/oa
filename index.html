@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/all.css" />
+  <title>ＯＡ工時系統頁面</title>
+  <style>
+    body {
+      width: 1000px;
+      margin: 0 auto;
+      padding-top: 10%;
+      overflow-y: scroll;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2%;
+    }
+
+    thead {
+      font-weight: 700;
+      font-size: 1.2em;
+      background: #bdbdbd;
+    }
+
+    thead th {
+      text-align: center;
+      width: 50%;
+      line-height: 2rem;
+    }
+
+    tbody td {
+      border-right: #bdbdbd solid 1px;
+      text-align: center;
+      line-height: 2rem;
+      
+    }
+    tbody td:last-child{
+        border-right: 0px;
+      }
+
+    .finish {
+      color: rgb(1, 177, 160);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ＯＡ工時系統頁面</h1>
+  <div class="">
+    <table class="striped">
+      <!-- <thead>
+        <tr>
+          <th colspan="2">共用元件</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>compontnet</td>
+          <td><a href="component.html">component.html</a></td>
+        </tr>
+        <tr>
+          <td>layout</td>
+          <td><a href="layoutPage.html">layoutPage.html</a></td>
+        </tr>
+      </tbody> -->
+      <thead>
+        <tr>
+          <th colspan="2">錯誤頁面樣式</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>page_1.0錯誤狀態</td>
+          <td><a href="page_1.0_error_status.html">page_1.0_error_status.html</a></td>
+        </tr>
+        <tr>
+          <td>page_4.0錯誤狀態</td>
+          <td><a href="page_4.0_error_status.html">page_4.0_error_status.html</a></td>
+        </tr>
+        <tr>
+          <td>page_11.0錯誤狀態</td>
+          <td><a href="page_11.0_error_status.html">page_11.0_error_status.html</a></td>
+        </tr>
+        <tr>
+          <td>page_35.c.0錯誤狀態</td>
+          <td><a href="page_35.c.0_error_status.html">page_35.c.0_error_status.html</a></td>
+        </tr>
+        <tr>
+          <td>page_36.0錯誤狀態</td>
+          <td><a href="page_36.0_error_status.html">page_36.0_error_status.html</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">我的工作記錄</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0.0</td>
+          <td><a href="page_1.0.html">同1.0</a></td>
+        </tr>
+        <tr>
+          <td>1.0</td>
+          <td><a href="page_1.0.html">page_1.0.html</a></td>
+        </tr>
+        <tr>
+          <td>1.1</td>
+          <td><a href="page_1.0.html">同1.0</a></td>
+        </tr>
+        <tr>
+          <td>1.2</td>
+          <td><a href="page_1.0.html">同1.0</a></td>
+        </tr>
+        <tr>
+          <td>2.0</td>
+          <td><a href="page_2.0.html">page_2.0.html</a></td>
+        </tr>
+        <tr>
+          <td>2.0.1</td>
+          <td><a href="page_2.0.html">與2.0同一檔案</a></td>
+        </tr>
+        <tr>
+          <td>2.1a</td>
+          <td><a href="page_2.1a.html">page_2.1a.html</a></td>
+        </tr>
+        <tr>
+          <td>2.1b</td>
+          <td><a href="page_2.1b.html">page_2.1b.html (2.1a無資料狀態)</a></td>
+        </tr>
+        <tr>
+          <td>2.1c</td>
+          <td ><a href="page_2.1b.html">與2.1b同一檔案,文字內容狀態不同</a></td>
+        </tr>
+        <td>2.2</td>
+        <td><a href="page_2.1a.html">與2.1a同一檔案</a></td>
+        </tr>
+        <tr>
+          <td>2.3</td>
+          <td><a href="page_2.1a.html">與2.1a同一檔案</a></td>
+        </tr>
+        <tr>
+          <td>3.0a</td>
+          <td><a href="page_3.0a.html">page_3.0a.html</a></td>
+        </tr>
+        <tr>
+          <td>3.0.1a</td>
+          <td><a href="page_3.0a.html">與3.0a同一檔案</a></td>
+        </tr>
+          <td>3.0b</td>
+          <td><a href="page_3.0b.html">page_3.0b.html（3.0.1a無資料狀態）</a></td>
+        </tr>
+        <td>3.1a</td>
+        <td><a href="page_2.1a.html">與2.1a同一檔案</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">我的計畫管理＿常用計畫成員</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4.0</td>
+          <td><a href="page_4.0.html">page_4.0.html</a>
+          </td>
+        </tr>
+        <tr>
+          <td>4.1</td>
+          <td class="finish"><a href="page_4.0.html">同4.0</a></td>
+        </tr>
+        <tr>
+          <td>4.2</td>
+          <td class="finish"><a href="page_4.0.html">同4.0</a></td>
+        </tr>
+        <tr>
+          <td>4.3.</td>
+          <td class="finish"><a href="page_4.4.html">同4.4</a></td>
+        </tr>
+        <tr>
+          <td>4.3.1</td>
+          <td class="finish"><a href="page_4.4.html">同4.4</a></td>
+        </tr>
+        <tr>
+          <td>4.4</td>
+          <td><a href="page_4.4.html">page_4.4.html</a></td>
+        </tr>
+        <tr>
+          <td>4.5</td>
+          <td><a href="page_4.5.html">page_4.5.html</a></td>
+        </tr>
+        <tr>
+          <td>4.6</td>
+          <td><a href="page_4.6.html">page_4.6.html</a></td>
+        </tr>
+        <tr>
+          <td>4.7</td>
+          <td><a href="page_4.6.html">同4.6</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">我的計畫管理＿計畫總覽</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10.0a</td>
+          <td><a href="page_13.4.1.html">同13.4.1</a></td>
+        </tr>
+        <tr>
+          <td>10.0</td>
+          <td><a href="page_10.0.html">page_10.0.html</a></td>
+        </tr>
+        <tr>
+          <td>11.0</td>
+          <td><a href="page_11.0.html">page_11.0.html</a></td>
+        </tr>
+        <tr>
+          <td>11.1</td>
+          <td><a href="page_11.1.html">page_11.1.html</a></td>
+        </tr>
+        <tr>
+          <td>11.2</td>
+          <td><a href="page_11.2.html">page_11.2.html</a></td>
+        </tr>
+        <tr>
+          <td>12.0</td>
+          <td><a href="page_11.0.html">同11.0</a></td>
+        </tr>
+        <tr>
+          <td>12.1</td>
+          <td><a href="page_11.0.html">同11.0</a></td>
+        </tr>
+        <tr>
+          <td>12.2</td>
+          <td><a href="page_11.2.html">11.2的無資料狀態</a></td>
+        </tr>
+        <tr>
+          <td>12.4</td>
+          <td><a href="page_11.2.html">同11.2</a></td>
+        </tr>
+        <tr>
+          <td>12.3</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>12.3.1</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>12.3.2</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>12.5</td>
+          <td><a href="page_11.2.html">同11.2</a></td>
+        </tr>
+        <tr>
+          <td>13.0</td>
+          <td><a href="page_11.0.html">同11.0</a></td>
+        </tr>
+        <tr>
+          <td>13.1</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>13.1.1</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>13.2</td>
+          <td><a href="page_13.2.html">page_13.2.html(上傳資料視窗)</a></td>
+        </tr>
+        <tr>
+          <td>13.3</td>
+          <td><a href="page_13.3.html">page_13.3.html(上傳資料視窗)</a></td>
+        </tr>
+        <tr>
+          <td>13.1.2</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>13.1.2.1</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>13.1.2.2</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>13.1.2.3</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>13.4</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>13.4.1</td>
+          <td><a href="page_13.4.1.html">page_13.4.1.html</a></td>
+        </tr>
+        <tr>
+          <td>13.4.2</td>
+          <td><a href="page_13.4.1.html">同13.4.1</a></td>
+        </tr>
+        <tr>
+          <td>13.4.3</td>
+          <td><a href="page_13.4.1.html">同13.4.1</a></td>
+        </tr>
+        <tr>
+          <td>13.5</td>
+          <td><a href="page_11.2.html">同11.2</a></td>
+        </tr>
+        <tr>
+          <td>13.6</td>
+          <td><a href="page_13.4.1.html">同13.4.1</a></td>
+        </tr>
+        <tr>
+          <td>14.0</td>
+          <td><a href="page_11.0.html">同11.0</a></td>
+        </tr>
+        <tr>
+          <td>14.1</td>
+          <td><a href="page_11.1.html">同11.1</a></td>
+        </tr>
+        <tr>
+          <td>14.2</td>
+          <td><a href="page_11.2.html">同11.2</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_計畫統計__a.部門主管</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>15.a.0</td>
+          <td><a href="page_15.a.0.html">page_15.a.0.html</a></td>
+        </tr>
+        <tr>
+          <td>15.a.0.1</td>
+          <td><a href="page_15.a.0.html">同15.a.0</a></td>
+        </tr>
+        <tr>
+          <td>16.0</td>
+          <td><a href="page_15.a.0.html">同15.a.0</a></td>
+        </tr>
+        <tr>
+          <td>17.0</td>
+          <td><a href="page_17.0.html">page_17.0.html</a></td>
+        </tr>
+        <tr>
+          <td>17.0.1</td>
+          <td><a href="page_17.0.html">同17.0</a></td>
+        </tr>
+        <tr>
+          <td>18.0.1</td>
+          <td><a href="page_18.0.2.html">同18.0.2</a></td>
+        </tr>
+        <tr>
+          <td>18.0.2</td>
+          <td><a href="page_18.0.2.html">page_18.0.2.html (page_17 計畫統計 未結案的無資料狀態</a></td>
+        </tr>
+        <tr>
+          <td>19.0.1</td>
+          <td><a href="page_19.0.1.html">page_19.0.1.html</a></td>
+        </tr>
+        <tr>
+          <td>19.0.2</td>
+          <td><a href="page_19.0.2.html">page_19.0.2.html</a></td>
+        </tr>
+        <tr>
+          <td>20.0</td>
+          <td><a href="page_19.0.1.html">同19.0.1</a></td>
+        </tr>
+        <tr>
+          <td>21.0</td>
+          <td><a href="page_19.0.1.html">同19.0.1</a></td>
+        </tr>
+        <tr>
+          <td>21.1</td>
+          <td><a href="page_19.0.2.html">同19.0.2</a></td>
+        </tr>
+        <tr>
+          <td>21.2</td>
+          <td><a href="page_19.0.2.html">同19.0.2</a></td>
+        </tr>
+        <tr>
+          <td>22.0</td>
+          <td><a href="page_19.0.1.html">同19.0.1</a></td>
+        </tr>
+        <tr>
+          <td>22.0.1</td>
+          <td><a href="page_19.0.2.html">同19.0.2</a></td>
+        </tr>
+        <tr>
+          <td>23.0</td>
+          <td><a href="page_23.0.html">page_23.0.html</a></td>
+        </tr>
+        <tr>
+          <td>23.1</td>
+          <td><a href="page_23.0.html">同23.0</a></td>
+        </tr>
+        <tr>
+          <td>24.0</td>
+          <td><a href="page_15.a.0.html">同15.a.0</a></td>
+        </tr>
+        <tr>
+          <td>24.0.1</td>
+          <td><a href="page_15.a.0.html">同15.a.0</a></td>
+        </tr>
+        <tr>
+          <td>25.0</td>
+          <td><a href="page_19.0.1.html">同19.0.1</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_計畫統計__b.高階主管.財務</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>15.b.0</td>
+          <td><a href="page_15.b.1.html">同15.b.1</a></td>
+        </tr>
+        <tr>
+          <td>15.b.1</td>
+          <td><a href="page_15.b.1.html">page_15.b.1.html</a></td>
+        </tr>
+        <tr>
+          <td>15.b.2</td>
+          <td><a href="page_15.a.0.html">同15.a.0</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">警示計畫__a.部門主管</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>26.a.0</td>
+          <td><a href="page_26.a.0.html">page_26.a.0.html</a></td>
+        </tr>
+        <tr>
+          <td>26.a.1</td>
+          <td><a href="page_26.a.1.html">page_26.a.1.html</a></td>
+        </tr>
+        <tr>
+          <td>26.a.2</td>
+          <td><a href="page_26.a.1.html">同26.a.1</a></td>
+        </tr>
+        </tr>
+        <tr>
+          <td>26.a.3</td>
+          <td><a href="page_26.a.3.html">page_26.a.3.html</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">警示計畫__b.高階主管.財務</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>26.b.0</td>
+          <td><a href="page_26.b.0.html">page_26.b.0.html</a></td>
+        </tr>
+        <tr>
+          <td>26.b.1</td>
+          <td><a href="page_26.b.0.html">同26.b.0</a></td>
+        </tr>
+        <tr>
+          <td>26.b.2</td>
+          <td><a href="page_26.a.0.html">同26.a.0</a></td>
+        </tr>
+        <tr>
+          <td>26.b.2.1</td>
+          <td><a href="page_26.b.2.1.html">page_26.b.2.1.html</a></td>
+        </tr>
+        <tr>
+          <td>26.b.3</td>
+          <td><a href="page_26.a.1.html">同26.a.1</a></td>
+        </tr>
+        <tr>
+          <td>26.b.4</td>
+          <td><a href="page_26.a.1.html">同26.a.1</a></td>
+        </tr>
+        <tr>
+          <td>26.b.5</td>
+          <td><a href="page_26.a.3.html">同26.a.3</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_人員工時列表_a.部門主管</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>27.a.0</td>
+          <td><a href="page_27.a.0.html">page_27.a.0.html</a></td>
+        </tr>
+        <tr>
+          <td>27.a.0.1</td>
+          <td><a href="page_27.a.0.html">同27.a.0.1</a></td>
+        </tr>
+        <tr>
+          <td>28.0</td>
+          <td><a href="page_28.0.html">page_28.0.html</a></td>
+        </tr>
+        <tr>
+          <td>28.1</td>
+          <td><a href="page_28.0.html">同28.0</a></td>
+        </tr>
+        <tr>
+          <td>29.0</td>
+          <td><a href="page_28.0.html">同28.0</a></td>
+        </tr>
+        <tr>
+          <td>29.1</td>
+          <td><a href="page_28.0.html">同28.0</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_人員工時列表__b.高階主管、財務</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>27.b.0</td>
+          <td><a href="page_27.b.0.html">page_27.b.0.html</a></td>
+        </tr>
+        <tr>
+          <td>27.b.1</td>
+          <td><a href="page_27.b.0.html">同27.b.0</a></td>
+        </tr>
+        <tr>
+          <td>27.b.2</td>
+          <td><a href="page_27.b.2.html">page_27.b.2.html</a></td>
+        </tr>
+        <tr>
+          <td>27.b.2.1</td>
+          <td><a href="page_27.b.2.html">同27.b.2</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_部門委託＿a.部門主管</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>30.a.0</td>
+          <td><a href="page_27.a.0.html">同27.a.0</a></td>
+        </tr>
+        <tr>
+          <td>30.a.0.1</td>
+          <td><a href="page_27.a.0.html">同27.a.0</a></td>
+        </tr>
+        <tr>
+          <td>30.a.0.2</td>
+          <td><a href="page_30.a.0.2.html">page_30.a.0.2.html</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_部門委託__b.高階主管、財務</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>30.b.0</td>
+          <td><a href="page_27.b.0.html">同27.b.0</a></td>
+        </tr>
+        <tr>
+          <td>30.b.1</td>
+          <td><a href="page_27.b.0.html">同27.b.0</a></td>
+        </tr>
+        <tr>
+          <td>30.b.2</td>
+          <td><a href="page_27.b.2.html">同27.b.2</a></td>
+        </tr>
+        <tr>
+          <td>30.b.2.1</td>
+          <td><a href="page_27.b.2.html">同27.b.2</a></td>
+        </tr>
+        <tr>
+          <td>30.b.2.2</td>
+          <td><a href="page_30.b.2.2.html">page_30.b.2.2.html</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_部門支援＿a.部門主管</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>31.a.0</td>
+          <td><a href="page_27.a.0.html">同27.a.0</a></td>
+        </tr>
+        <tr>
+          <td>31.a.0.1</td>
+          <td><a href="page_27.a.0.html">同27.a.0</a></td>
+        </tr>
+        <tr>
+          <td>31.a.0.2</td>
+          <td><a href="page_27.a.0.html">同27.a.0</a></td>
+        </tr>
+        <tr>
+          <td>32.0</td>
+          <td><a href="page_32.0.html">page_32.0.html</a></td>
+        </tr>
+        <tr>
+          <td>32.0.1</td>
+          <td><a href="page_32.0.html">同32.0</a></td>
+        </tr>
+        <tr>
+          <td>33.0</td>
+          <td><a href="page_28.0.html">同28.0</a></td>
+        </tr>
+        <tr>
+          <td>33.0.1</td>
+          <td><a href="page_28.0.html">同28.0</a></td>
+        </tr>
+        <tr>
+          <td>34.0</td>
+          <td><a href="page_28.0.html">同28.0</a></td>
+        </tr>
+        <tr>
+          <td>34.0.1</td>
+          <td><a href="page_28.0.html">同28.0</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_人員工時未達比例＿b.高階主管</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>31.b.0</td>
+          <td><a href="page_27.b.0.html">同27.b.0</a></td>
+        </tr>
+        <tr>
+          <td>31.b.1</td>
+          <td><a href="page_27.b.0.html">同27.b.0</a></td>
+        </tr>
+        <tr>
+          <td>31.b.2</td>
+          <td><a href="page_27.b.2.html">同27.b.2</a></td>
+        </tr>
+        <tr>
+          <td>31.b.2.1</td>
+          <td><a href="page_27.b.2.html">同27.b.2</a></td>
+        </tr>
+        <tr>
+          <td>31.b.2.2</td>
+          <td><a href="page_30.b.2.2.html">同30.b.2.2</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_人員工時未達比例＿a.部門主管</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>35.a.0</td>
+          <td><a href="page_35.a.0.html">page_35.a.0.html</a></td>
+        </tr>
+        <tr>
+          <td>35.a.0.1</td>
+          <td><a href="page_35.a.0.html">同35.a.0</a></td>
+        </tr>
+        <tr>
+          <td>35.a.0.2</td>
+          <td><a href="page_30.a.0.2.html">同30.a.0.2</a></td>
+        </tr>
+        <tr>
+          <td>35.a.1</td>
+          <td><a href="page_35.a.1.html">page_35.a.1.html</a></td>
+        </tr>
+        <tr>
+          <td>35.a.1.1</td>
+          <td><a href="page_35.a.1.1.html">page_35.a.1.1.html</a></td>
+        </tr>
+        <tr>
+          <td>35.a.2</td>
+          <td><a href="page_35.a.1.html">同35.a.1</a></td>
+        </tr>
+        <tr>
+          <td>35.a.2.1</td>
+          <td><a href="page_35.a.1.1.html">同35.a.1.1</a></td>
+        </tr>
+        <tr>
+          <td>35.a.3</td>
+          <td><a href="page_35.a.3.html">page_35.a.3.html</a></td>
+        </tr>
+        <tr>
+          <td>35.a.3.1</td>
+          <td><a href="page_35.a.3.html">同35.a.3</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_人員工時未達比例＿b.高階主管、財務</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>35.b.0</td>
+          <td><a href="page_27.b.0.html">同27.b.0</a></td>
+        </tr>
+        <tr>
+          <td>35.b.1</td>
+          <td><a href="page_27.b.0.html">同27.b.0</a></td>
+        </tr>
+        <tr>
+          <td>35.b.2</td>
+          <td><a href="page_35.b.2.html">page_35.b.2.html</a></td>
+        </tr>
+        <tr>
+          <td>35.b.2.1</td>
+          <td><a href="page_35.b.2.html">同35.b.2</a></td>
+        </tr>
+        <tr>
+          <td>35.b.2.2</td>
+          <td><a href="page_30.b.2.2.html">同30.b.2.2</a></td>
+        </tr>
+        <tr>
+          <td>35.b.3</td>
+          <td><a href="page_35.a.1.html">page_35.a.1.html</a></td>
+        </tr>
+        <tr>
+          <td>35.b.4</td>
+          <td><a href="page_35.a.1.html">page_35.a.1.html</a></td>
+        </tr>
+        <tr>
+          <td>35.b.3.1</td>
+          <td><a href="page_35.a.1.1.html">同35.a.1.1</a></td>
+        </tr>
+        <tr>
+          <td>35.b.4.1</td>
+          <td><a href="page_35.a.1.1.html">同35.a.1.1</a></td>
+        </tr>
+        <tr>
+          <td>35.b.5</td>
+          <td><a href="page_35.a.3.html">同35.a.3</a></td>
+        </tr>
+        <tr>
+          <td>35.b.5.1</td>
+          <td><a href="page_35.a.3.html">同35.a.3</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_人員統計_人員工時未達比例＿c.財務</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>35.c.0</td>
+          <td><a href="page_35.c.0.html">page_35.c.0.html</a></td>
+        </tr>
+        <tr>
+          <td>35.c.1</td>
+          <td><a href="page_35.c.1.html">page_35.c.1.html</a></td>
+        </tr>
+        <tr>
+          <td>35.c.1.1</td>
+          <td><a href="page_35.c.1.html">同35.c.1</a></td>
+        </tr>
+        <tr>
+          <td>35.c.1.2</td>
+          <td><a href="page_35.c.1.2.html">page_35.c.1.2.html</a></td>
+        </tr>
+        <tr>
+          <td>35.c.2</td>
+          <td><a href="page_35.c.2.html">page_35.c.2.html</a></td>
+        </tr>
+        <tr>
+          <td>35.c.2.1</td>
+          <td><a href="page_35.c.2.1.html">page_35.c.2.1.html</a></td>
+        </tr>
+        <tr>
+          <td>35.c.3</td>
+          <td><a href="page_35.c.2.html">同35.c.2</a></td>
+        </tr>
+        <tr>
+          <td>35.c.3.1</td>
+          <td><a href="page_35.c.2.1.html">同35.c.2.1</a></td>
+        </tr>
+        <tr>
+          <td>35.c.4</td>
+          <td><a href="page_35.a.3.html">同35.a.3</a></td>
+        </tr>
+        <tr>
+          <td>35.c.4.1</td>
+          <td><a href="page_35.a.3.html">同35.a.3</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">統計報表_財務統計總覽__財務專用</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>36.0</td>
+          <td><a href="page_36.0.html">page_36.0.html</a></td>
+        </tr>
+        <tr>
+          <td>37.0</td>
+          <td><a href="page_36.0.html">同36.0</a></td>
+        </tr>
+        <tr>
+          <td>38.0</td>
+          <td><a href="page_36.0.html">同36.0</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">系統管理_系統維護</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>39.0</td>
+          <td><a href="page_39.0.html">page_39.0.html</a></td>
+        </tr>
+        <tr>
+          <td>39.1</td>
+          <td><a href="page_39.1.html">page_39.1.html</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/compontnt.js"></script>
+</body>
+
+</html>

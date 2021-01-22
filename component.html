@@ -1,0 +1,3143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="stylesheets/all.css" />
+  <title>compontent</title>
+</head>
+
+<body style="width: 1200px; margin: 0 auto;  overflow-y: scroll;">
+  <!-- breadcrumb -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    breadcrumb
+  </h3>
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    breadcrumb
+  </div>
+  <div class="c-breadcrumb">
+    <div class="">我的計畫管理</div>
+    <div class="">></div>
+    <div class="">待建WBS計畫</div>
+  </div>
+
+  <!-- tab -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    header
+  </h3>
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    tabs
+  </div>
+  <div class="c-tabs">
+    <h3 class="c-tabs__title">人員統計</h3>
+    <div class="c-tabs__content">
+      <ul class="c-tabs__item tabs">
+        <li class="c-tabs__item__link tab col s3"><a href="#test1">人員工時</a></li>
+        <li class="c-tabs__item__link tab col s3"><a class="active" href="#test2">部門委託工時</a></li>
+        <li class="c-tabs__item__link tab col s3"><a href="#test4">部門支援工時</a></li>
+        <li class="c-tabs__item__link tab col s3 "><a href="#test3">人員工時未達比例</a></li>
+      </ul>
+      <div class="c-tabs__item">
+        <div class="c-tabs__item__btnGroup">
+          <div class="c-tabs__icon"></div>
+          <div class="c-tabs__iconTitle">匯出</div>
+        </div>
+        <div class="c-tabs__item__btnGroup">
+          <div class="c-tabs__icon"></div>
+          <div class="c-tabs__iconTitle">發送通知</div>
+        </div>
+        <div class="c-tabs__item__btnGroup">
+          <div class="c-tabs__icon"></div>
+          <div class="c-tabs__iconTitle">匯出</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="test1" class="col s12">Test 1</div>
+  <div id="test2" class="col s12">Test 2</div>
+  <div id="test3" class="col s12">Test 3</div>
+  <div id="test4" class="col s12">Test 4</div>
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    general
+  </div>
+  <div class="c-general">
+    <h3 class="c-general__title">計畫統計</h3>
+  </div>
+
+  <!-- card -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    card
+  </h3>
+  <!-- card manhourSofar -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card manhourSofar
+  </div>
+  <!-- <div class="c-card-manhourSofar">
+    <h2>蘇紫瑜</h2>
+    <h3>Michelle</h3>
+    <div class="c-card__userInformation">
+      <h3>A9005</h3>
+      <h3>U20</h3>
+    </div>
+    <div class="c-card__content">
+      <div class="c-card__item">
+        <div class="c-card__item__title">區開工時</div>
+        <div class="c-card__item__time">17</div>
+      </div>
+      <div class="c-card__item">
+        <div class="c-card__item__title">累計工時</div>
+        <div class="c-card__item__time">117</div>
+      </div>
+    </div>
+  </div> -->
+  <div class="c-card-manhourSofar">
+    <h2 class="c-card-manhourSofar__userName">蘇紫瑜</h2>
+    <h3 class="c-card-manhourSofar__englishName">Michelle</h3>
+    <div class="c-card__userInformation">
+      <h3>A9005</h3>
+      <h3>U20</h3>
+    </div>
+    <div class="c-card__content">
+      <div class="c-card__item">
+        <div class="c-card__item__title">區開工時</div>
+        <div class="c-card__item__time">17</div>
+      </div>
+      <div class="c-card__item">
+        <div class="c-card__item__title">累計工時</div>
+        <div class="c-card__item__time">117</div>
+      </div>
+    </div>
+  </div>
+  <!-- card manhourSearch -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card manhourSearch
+  </div>
+  <div class="c-card-manhourSearch">
+    <h2>蘇紫瑜</h2>
+    <h3>Michelle</h3>
+    <div class="c-card__userInformation">
+      <h3>A9005</h3>
+      <h3>U20</h3>
+    </div>
+    <div class="c-card__content">
+      <div class="c-card__item">
+        <div class="c-card__item__title">搜尋區開工時</div>
+        <div class="c-card__item__time">496</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card percent -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card percent
+  </div>
+  <div class="c-card-percent">
+    <div class="c-card-title">
+    <div class="">
+      <h2>蘇紫瑜</h2>
+      <h3>Michelle</h3> 
+    </div>
+    </div>
+    <div class="c-card__userInformation">
+      <h3>A9005</h3>
+      <h3>U20</h3>
+    </div>
+    <div class="c-card__content">
+      <div class="c-card__item">
+        <div class="c-card__item__title">已填/應填</div>
+        <div class="c-card__item__time">
+          <div class="">
+            100
+            <span class="c-card__item__totaltime">/120</span>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item">
+        <div class="c-card__item__title">請假</div>
+        <div class="c-card__item__time">
+          <div class="">20</div>
+          <div class="c-card__item__totaltime"></div>
+        </div>
+      </div>
+      <div class="c-card__item">
+        <div class="c-card__item__title">比例</div>
+        <div class="c-card__item__time">
+          <div class="">50</div>
+          <div class="c-card__item__totaltime"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 有加上ＪＳ classname的 -->
+  <div class="c-card-percent js-c-card-addName">
+    <div class="c-card-title">
+    <div class="">
+      <h2 class="c-card-percent__userName js-c-card__userName">蘇紫瑜</h2>
+      <h3 class="c-card-percent__englishName js-c-card__englishName">Michelle</h3> 
+    </div>
+    </div>
+    <div class="c-card__userInformation">
+      <h3 class="js-c-card__userNumber">A9005</h3>
+      <h3>U20</h3>
+    </div>
+    <div class="c-card__content">
+      <div class="c-card__item c-card-percent__workTime">
+        <div class="c-card__item__title">已填/應填</div>
+        <div class="c-card__item__time">
+          <div class="">
+            100
+            <span class="c-card__item__totaltime">/120</span>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item c-card-percent__leaveTime">
+        <div class="c-card__item__title">請假</div>
+        <div class="c-card__item__time">
+          <div class="">20</div>
+          <div class="c-card__item__totaltime"></div>
+        </div>
+      </div>
+      <div class="c-card__item c-card-percent__percent">
+        <div class="c-card__item__title">比例</div>
+        <div class="c-card__item__time">
+          <div class="">50</div>
+          <div class="c-card__item__totaltime"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- card percentCheck -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card percentCheck
+  </div>
+  <div class="c-card-percentCheck">
+    <div class="c-card-title">
+      <div class="">
+        <h2>蘇紫瑜</h2>
+        <h3>Michelle</h3>
+      </div>
+      <form action="">
+        <p>
+          <label>
+            <input type="checkbox" class="filled-in" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+    <div class="c-card__userInformation">
+      <h3>A9005</h3>
+      <h3>U20</h3>
+    </div>
+    <div class="c-card__content">
+      <div class="c-card__item">
+        <div class="c-card__item__title">已填/應填</div>
+        <div class="c-card__item__time">
+          <div class="">
+            100
+            <span class="c-card__item__totaltime">/120</span>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item">
+        <div class="c-card__item__title">請假</div>
+        <div class="c-card__item__time">
+          <div class="">20</div>
+          <div class="c-card__item__totaltime"></div>
+        </div>
+      </div>
+      <div class="c-card__item">
+        <div class="c-card__item__title">比例</div>
+        <div class="c-card__item__time">
+          <div class="">50</div>
+          <div class="c-card__item__totaltime"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- card department -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card department
+  </div>
+  <div class="c-card-department">
+    <h2>M10</h2>
+    <div class="c-card__userInformation"></div>
+    <div class="c-card__content">
+      <div class="c-card__item">
+        <div class="c-card__item__title">
+          區間支援工時
+        </div>
+        <div class="c-card__item__time">60</div>
+      </div>
+    </div>
+  </div>
+  <!-- card planHotkey -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card planHotkey
+  </div>
+  <div class="c-card-planHotkey">
+    <div class="c-card__content">
+      <div class="c-card__tag">
+        <span class="">2020WEV24H</span>
+      </div>
+      <h2>
+        2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+      </h2>
+      <div class="c-card__development">
+        <div class="c-card__development__item">
+          <img src="img/o-branch.svg" alt="" />
+          <span>系統開發與設計統...</span>
+        </div>
+        <div class="c-card__development__item__subproject">
+          <img src="img/o-branch.svg" alt="" />
+          <span>網站頁面規劃與...</span>
+        </div>
+      </div>
+    </div>
+    <div class="c-card-planHotkey__btn">加入此工作</div>
+  </div>
+  <!-- card lablePerson -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card lablePerson
+  </div>
+  <div class="c-card-lablePerson">
+    <div class="c-card-lablePerson-title">U00</div>
+    <div class="c-card-lablePerson-item">
+      <div class="">
+        <div class="">A9025</div>
+        <div class="">王小明 Mike</div>
+      </div>
+    </div>
+  </div>
+  <div class="c-card-lablePerson">
+    <div class="c-card-lablePerson-title">U00</div>
+    <div class="c-card-lablePerson-item">
+      <div class="">
+        <div class="">A9025</div>
+        <div class="">王小明 Mike</div>
+      </div>
+      <div class="c-card-lablePerson-item__btn "><img src="img/o-delete.svg" alt="" /></div>
+    </div>
+  </div>
+  <!--card  lableGroup -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card lableGroup
+  </div>
+  <div class="c-card-lableGroup">
+    <div class="c-card-lableGroup__icon">
+      <img src="img/o-group.svg" alt="" />
+      <div class="">4</div>
+    </div>
+    <div class="c-card-lableGroup__item">業務群組</div>
+  </div>
+
+  <!-- card planPerson -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card planPerson
+  </div>
+  <div class="c-card-planPerson">
+    <a href="#">
+      <div class="c-card__tag">
+        <span class="">2020WEV24H</span>
+      </div>
+      <h2>109年台灣國際專業展網站強化案際專業展網站強化案</h2>
+      <div class="c-card__userInformation">PM-王小明</div>
+      <div class="c-card__content">
+        <div class="c-card__item">
+          <div class="c-card__item__title">目前累計工時</div>
+          <div class="c-card__item__time">2000</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- card planClosed -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card planClosed
+  </div>
+  <div class="c-card-planClosed">
+    <a href="#">
+      <div class="c-card__tag">
+        <span class="">2020WEV24H</span>
+      </div>
+      <h2>109年台灣國際專業展網站強化案際專業展網站強化案</h2>
+      <div class="c-card__date">
+        2020.07.02
+        <span class="br"></span>
+        <span class="dash">-</span> 2020.08.03
+      </div>
+      <div class="c-card__userInformation">
+        <span class="c-card__userInformation__pm">
+          <span class="c-card__userInformation__pm__title">PM-</span>
+          王小明</span
+        >
+        <span class="c-card__userInformation__block"> | </span>
+        <span class="c-card__userInformation__sale">
+          <span class="c-card__userInformation__pm__title"
+            >業務-</span
+          >
+          黃曉芳</span
+        >
+      </div>
+      <div class="c-card__content">
+        <div class="c-card__item">
+          <div class="c-card__item__title">總工時</div>
+          <div class="c-card__item__time">2000</div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- card planReport -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card planReport
+  </div>
+
+  <div class="c-card-planReport">
+    <div class="c-card__item">
+      <div class="c-card__item__title">
+        <div class="c-card__tag">
+          <div class="c-card__tag__num">
+            <div class="c-card__tag__btn">
+              <div
+                class="o-card__iconBtn o-card__star-default"
+              ></div>
+            </div>
+            <span class="">2020WEV24H</span>
+          </div>
+          <span class="c-card__tag__status">籌備</span>
+        </div>
+        <h2 class="">
+          109年臺灣國際專業展網站強化案國際專業展網站
+        </h2>
+        <div class="c-card__text">
+          <div class="c-card__text__startTime">
+            2020.07.02 <div>-</div><span></span>
+            2020.08.03
+          </div>
+          <div class="c-card__text__block">|</div>
+          <div class="c-card__position">
+            <span>PM-</span> 王小明
+          </div>
+          <div class="c-card__text__block">|</div>
+          <div class="c-card__position">
+            <span>業務.</span> 張嘉祥
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__content">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__icon">
+              <img src="img/o-money.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">收入</div>
+            <div class="col list__item__num col">87714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">成本</div>
+            <div class="col list__item__num col">77714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">毛利</div>
+            <div class="col list__item__num col">10000000</div>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__footer">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__icon">
+              <img src="img/o-clock-blue.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">區間工時</div>
+            <div class="col list__item__num col">
+              <span>1000.0/1000.0</span>
+            </div>
+            <div class="list__item__percent"><span>100%</span></div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">累計工時</div>
+            <div class="col list__item__num col">
+              <span>1000.0/1000.0</span>
+            </div>
+            <div class="list__item__percent"><span>100%</span></div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">全案工時</div>
+            <div class="col list__item__num col">
+              1000.0/1000.0
+            </div>
+            <div class="list__item__percent">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="c-card-planReport">
+    <div class="c-card__item">
+      <div class="c-card__item__title">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__iconBtn o-card__star-default"></div>
+          </div>
+          <span class="">2020WEV24H</span>
+          <span class="">籌備</span>
+        </div>
+        <h2 class="">109年臺灣國際專業展網站強化案國際專業展網站</h2>
+        <div class="c-card__text">
+          <div>2020.07.02-2020.08.03</div>
+          <div class="">|</div>
+          <div>PM-王小明</div>
+          <div class="">|</div>
+          <div>業務.張嘉祥</div>
+        </div>
+      </div>
+      <div class="c-card__item__content">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__iconBtn">
+              <img src="img/o-money.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">收入</div>
+            <div class="col list__item__num col">87714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">成本</div>
+            <div class="col list__item__num col">77714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">毛利</div>
+            <div class="col list__item__num col">10000000</div>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__footer">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__iconBtn">
+              <img src="img/o-clock-blue.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">區間工時</div>
+            <div class="col list__item__num col">1000.0/1000.0</div>
+            <div class="list__item__percent">100%</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">累計工時</div>
+            <div class="col list__item__num col">1000.0/1000.0</div>
+            <div class="list__item__percent">100%</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">全案工時</div>
+            <div class="col list__item__num col">1000.0/1000.0</div>
+            <div class="list__item__percent">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- card planReport-danger -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card planReport-danger
+  </div>
+  <div class="c-card-planReport-danger">
+    <div class="c-card__item">
+      <div class="c-card__item__title">
+        <div class="c-card__tag">
+          <div class="c-card__tag__num">
+            <div class="c-card__tag__btn">
+              <div
+                class="o-card__iconBtn o-card__star-default"
+              ></div>
+            </div>
+            <span class="">2020WEV24H</span>
+          </div>
+          <span class="c-card__tag__status">籌備</span>
+        </div>
+        <h2 class="">
+          109年臺灣國際專業展網站強化案國際專業展網站
+        </h2>
+        <div class="c-card__text">
+          <div class="c-card__text__startTime">
+            2020.07.02 <div>-</div><span></span>
+            2020.08.03
+          </div>
+          <div class="c-card__text__block">|</div>
+          <div class="c-card__position">
+            <span>PM-</span> 王小明
+          </div>
+          <div class="c-card__text__block">|</div>
+          <div class="c-card__position">
+            <span>業務.</span> 張嘉祥
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__content">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__icon">
+              <img src="img/o-money.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">收入</div>
+            <div class="col list__item__num col">87714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">成本</div>
+            <div class="col list__item__num col">77714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">毛利</div>
+            <div class="col list__item__num col">10000000</div>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__footer">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__icon">
+              <img src="img/o-clock-danger.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">區間工時</div>
+            <div class="col list__item__num col is-danger">
+              <span>1000.0/1000.0</span>
+            </div>
+            <div class="list__item__percent is-danger"><span>120%</span></div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">累計工時</div>
+            <div class="col list__item__num col is-danger">
+             <span> 1000.0/1000.0</span>
+            </div>
+            <div class="list__item__percent is-danger"><span>130%</span></div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">全案工時</div>
+            <div class="col list__item__num col">
+              1000.0/1000.0
+            </div>
+            <div class="list__item__percent">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="c-card-planReport-danger">
+    <div class="c-card__item">
+      <div class="c-card__item__title">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__iconBtn o-card__star-default"></div>
+          </div>
+          <span class="">2020WEV24H</span>
+          <span class="">籌備</span>
+        </div>
+        <h2 class="">109年臺灣國際專業展網站強化案國際專業展網站</h2>
+        <div class="c-card__text">
+          <div>2020.07.02-2020.08.03</div>
+          <div class="">|</div>
+          <div>PM-王小明</div>
+          <div class="">|</div>
+          <div>業務.張嘉祥</div>
+        </div>
+      </div>
+      <div class="c-card__item__content">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__iconBtn">
+              <img src="img/o-money.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">收入</div>
+            <div class="col list__item__num col">87714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">成本</div>
+            <div class="col list__item__num col">77714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">毛利</div>
+            <div class="col list__item__num col">10000000</div>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__footer">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__iconBtn">
+              <img src="img/o-clock-danger.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">區間工時</div>
+            <div class="col list__item__num list__item__num is-danger col">120000/1000.0</div>
+            <div class="list__item__percent is-danger">120%</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">累計工時</div>
+            <div class="col list__item__num is-danger col ">1000.0/1000.0</div>
+            <div class="list__item__percent is-danger">130%</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">全案工時</div>
+            <div class="col list__item__num col">1000.0/1000.0</div>
+            <div class="list__item__percent">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- card alertPlan -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    card alertPlan
+  </div>
+  <div class="c-card-alertPlan">
+    <div class="c-card__item">
+      <div class="c-card__item__title">
+        <div class="c-card__tag">
+          <div class=""><span class="">2020WEV24H</span>
+            <span class="">籌備</span></div>
+          <div class="">
+            <form action="">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in  js-inputStyle" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <h2 class="">
+          109年臺灣國際專業展網站強化案國際專業展網站
+        </h2>
+        <div class="c-card__text">
+          <div class="c-card__text__startTime">
+            2020.07.02 <div>-</div><span></span>
+            2020.08.03
+          </div>
+          <div class="c-card__text__block">|</div>
+          <div class="c-card__position">
+            <span>PM-</span> 王小明
+          </div>
+          <div class="c-card__text__block">|</div>
+          <div class="c-card__position">
+            <span>業務.</span> 張嘉祥
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__content">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__icon">
+              <img src="img/o-money.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">收入</div>
+            <div class="col list__item__num col">87714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">成本</div>
+            <div class="col list__item__num col">77714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">毛利</div>
+            <div class="col list__item__num col">10000000</div>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__footer">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__icon">
+              <img src="img/o-clock-danger.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">區間工時</div>
+            <div class="col list__item__num col is-danger">
+              1000.0/1000.0
+            </div>
+            <div class="list__item__percent is-danger">120%</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">累計工時</div>
+            <div class="col list__item__num col is-danger">
+              1000.0/1000.0
+            </div>
+            <div class="list__item__percent is-danger">130%</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">全案工時</div>
+            <div class="col list__item__num col">
+              1000.0/1000.0
+            </div>
+            <div class="list__item__percent">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="c-card-alertPlan">
+    <div class="c-card__item">
+      <div class="c-card__item__title">
+        <div class="c-card__tag">
+          <div class=""><span class="">2020WEV24H</span>
+            <span class="">籌備</span></div>
+          <div class="">
+            <form action="">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <h2 class="">109年臺灣國際專業展網站強化案國際專業展網站</h2>
+        <div class="c-card__text">
+          <div>2020.07.02-2020.08.03</div>
+          <div>PM-王小明</div>
+          <div>業務.張嘉祥</div>
+        </div>
+      </div>
+      <div class="c-card__item__content">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__iconBtn">
+              <img src="img/o-money.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">收入</div>
+            <div class="col list__item__num col">87714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">成本</div>
+            <div class="col list__item__num col">77714299</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">毛利</div>
+            <div class="col list__item__num col">10000000</div>
+          </div>
+        </div>
+      </div>
+      <div class="c-card__item__footer">
+        <div class="c-card__tag">
+          <div class="c-card__tag__btn">
+            <div class="o-card__iconBtn">
+              <img src="img/o-clock-danger.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="c-card__item__content__list">
+          <div class="list__item row">
+            <div class="list__item__title col">區間工時</div>
+            <div class="col list__item__num list__item__num is-danger col">120000/1000.0</div>
+            <div class="list__item__percent is-danger">120%</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">累計工時</div>
+            <div class="col list__item__num is-danger col ">1000.0/1000.0</div>
+            <div class="list__item__percent is-danger">130%</div>
+          </div>
+          <div class="list__item row">
+            <div class="list__item__title col">全案工時</div>
+            <div class="col list__item__num col">1000.0/1000.0</div>
+            <div class="list__item__percent">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- accordion -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    accordion
+  </h3>
+  <!-- accordion group -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    accordion group
+  </div>
+  <ul class="collapsible c-accordion-group">
+    <li>
+      <div class="collapsible-header accordion-header">
+        <div class="accordion-header__item">
+          <div class="header__item__icon">
+            <img src="img/o-group.svg" alt="" />
+            <div class="">4</div>
+          </div>
+          <div class="header__item__title">業務群組</div>
+        </div>
+        <div class="accordion-header__item">
+          <div class="o-accordion_plus collapsible-btn">
+            <div class="plus-icon icon">
+              <div class="horizontal"></div>
+              <div class="vertical"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible-body accordion-body">
+        <div class="row accordion-body__title">
+          <div class="col s2">部門</div>
+          <div class="col s3">工號</div>
+          <div class="col s3">姓名</div>
+          <div class="col s4">英文暱稱</div>
+        </div>
+        <div class="row accordion-body__item">
+          <div class="col s2">U00</div>
+          <div class="col s3">A9025</div>
+          <div class="col s3">王小明</div>
+          <div class="col s4">Mike</div>
+        </div>
+        <div class="row accordion-body__item">
+          <div class="col s2">U00</div>
+          <div class="col s3">A9025</div>
+          <div class="col s3">王小明</div>
+          <div class="col s4">Mike</div>
+        </div>
+        <div class="row accordion-body__item">
+          <div class="col s2">U00</div>
+          <div class="col s3">A9025</div>
+          <div class="col s3">王小明</div>
+          <div class="col s4">Mike</div>
+        </div>
+        <div class="row accordion-body__item">
+          <div class="col s2">U00</div>
+          <div class="col s3">A9025</div>
+          <div class="col s3">王小明</div>
+          <div class="col s4">Mike</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <!-- accordion plan -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    accordion plan
+  </div>
+  <ul class="collapsible c-accordion-plan">
+    <li>
+      <div class="collapsible-header accordion-header">
+        <div class="accordion-header__item">
+          <div class="header__item__title">
+            國立臺北科技大學-本校圖書館入口網建置案
+          </div>
+
+        </div>
+        <div class="accordion-header__item">
+          <div class="accordion-header__item__hour">
+            <div class="accordion-header__item__hour__title">
+              此月填入工時
+            </div>
+            <div class="accordion-header__item__hour__num">3</div>
+          </div>
+          <div class="o-accordion_plus collapsible-btn">
+            <div class="plus-icon icon">
+              <div class="horizontal"></div>
+              <div class="vertical"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible-body accordion-body">
+        <div class="row accordion-body__title">
+          <div class="col s2">填寫日期</div>
+          <div class="col s3">工作階段</div>
+          <div class="col s3">工作內容</div>
+          <div class="col s1">時數</div>
+          <div class="col s3">備註</div>
+        </div>
+        <div class="row accordion-body__item">
+          <div class="col s2">2020.09.15</div>
+          <div class="col s3">網站介面規劃與設計</div>
+          <div class="col s3">網站介面規劃與設計</div>
+          <div class="col s1">4</div>
+          <div class="col s3">5個樣板</div>
+        </div>
+        <div class="row accordion-body__item">
+          <div class="col s2">2020.09.15</div>
+          <div class="col s3">網站介面規劃與設計</div>
+          <div class="col s3">網站介面規劃與設計</div>
+          <div class="col s1">4</div>
+          <div class="col s3">5個樣板</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <!-- accordion general -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    accordion general
+  </div>
+  <div class="c-accordion-general">
+    <div class="accordion-body">
+      <div class="row accordion-body__title">
+        <div class="col s2">支援部門</div>
+        <div class="col s2">計畫名稱</div>
+        <div class="col s2">工作階段</div>
+        <div class="col s3">工作內容</div>
+        <div class="col s1">時數</div>
+        <div class="col s2">備註</div>
+      </div>
+      <div class="row accordion-body__item">
+        <div class="col s2">M10</div>
+        <div class="col s2">109年臺灣國際專業展..</div>
+        <div class="col s2">網站介面規劃與設計</div>
+        <div class="col s3">網站介面規劃與設計</div>
+        <div class="col s1">1000</div>
+        <div class="col s2">5個樣板</div>
+      </div>
+      <div class="row accordion-body__item">
+        <div class="col s2">M10</div>
+        <div class="col s2">109年臺灣國際專業展..</div>
+        <div class="col s2">系統開發與設計與設計</div>
+        <div class="col s3">網站介面規劃與設計</div>
+        <div class="col s1">4</div>
+        <div class="col s2">無</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fileInput -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    fileInput
+  </h3>
+  <!-- fileInput upload-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    fileInput upload
+  </div>
+  <div class="c-fileInput-upload">
+    <div class="">
+      <img class="c-fileInput__img" src="img/o-uploadL.svg" alt="" />
+      <div class="c-fileInput__title">上傳Excel</div>
+    </div>
+  </div>
+  <!-- fileInput add-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    fileInput add
+  </div>
+  <div class="c-fileInput-add">
+    <div class="">
+      <img class="c-fileInput__img" src="img/o-plusL.svg" alt="" />
+      <div class="c-fileInput__title">線上編輯</div>
+    </div>
+  </div>
+  <!-- toast  -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    toast
+  </h3>
+  <!-- toast uploadSuccess -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    toast uploadSuccess
+  </div>
+  <div class="c-toast-uploadSuccess">
+    <div class="c-toast-header">
+      <div class="">成功上傳 1 個檔案</div>
+      <img src="img/o-corss.svg" alt="" />
+    </div>
+    <div class="c-toast-body">
+      <div class="c-toast-body__item">
+        <div class="c-toast-body__item__title">
+          <div class="">
+            <img src="img/o-fileXls.svg" alt="" />
+            <div class="">檔案名稱.xls</div>
+          </div>
+          <img src="img/o-uploadSuccess.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- toast uploadFailure -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    toast uploadFailure
+  </div>
+  <div class="c-toast-uploadFailure">
+    <div class="c-toast-header">
+      <div class="">上傳檔案發生錯誤</div>
+      <img src="img/o-corss.svg" alt="" />
+    </div>
+    <div class="c-toast-body">
+      <div class="c-toast-body__item">
+        <div class="c-toast-body__item__title">
+          <div class="">
+            <img src="img/o-fileDoc.svg" alt="" />
+            <div class="">檔案名稱.xls</div>
+          </div>
+          <img src="img/o-uploadFailure.svg" alt="" />
+        </div>
+      </div>
+      <div class="c-toast-body__item">
+        <div class="c-toast-body__item__content">
+          <img src="img/o-alert.svg" alt="" />
+          <div class="">檔案無法上傳時，請確認下列項目：</div>
+        </div>
+        <ul class="c-toast-body__item__list">
+          <li>1.檔案類型需為Excel</li>
+          <li>2.Excel欄位需與範本相同</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- toast join -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    toast join
+  </div>
+  <div class="c-toast-join">
+    <div class="c-toast-body">
+      <div class="">已加入此工作項目</div>
+      <img src="img/o-corss.svg" alt="" />
+    </div>
+  </div>
+  <!-- toast joinCancel -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    toast joinCancel
+  </div>
+  <div class="c-toast-joinCancel">
+    <div class="c-toast-body">
+      <div class="">已退出此工作項目</div>
+      <img src="img/o-corss.svg" alt="" />
+    </div>
+  </div>
+
+
+  <!-- toast join -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    search
+  </h3>
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    search
+  </div>
+  <div class="c-search">
+    <div class="c-search-list">
+      <div class="c-search-item">
+        <div class="c-search-item__title">工作區間</div>
+        <div class="c-search-item__input">
+          <div class="o-input-div"></div>
+        </div>
+      </div>
+      <div class="c-search-item">
+        <div class="c-search-item__title">關鍵字</div>
+        <div class="c-search-item__input">
+          <input type="text" class="" placeholder="計畫名稱及代號" />
+        </div>
+      </div>
+    </div>
+    <div class="c-search-btn">
+      <button class="o-btn-primary waves-effect waves-blue">確定</button>
+    </div>
+  </div>
+  <!-- btn -->
+  <!-- btn-primary -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    btn
+  </h3>
+  <!-- btn-primary -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    btn primary
+  </div>
+  <button class="o-btn-primary waves-effect waves-blue">按鈕</button>
+  <!-- btn-secondary -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
+    btn secondary
+  </div>
+  <button class="o-btn-secondary waves-effect waves-blue">按鈕</button>
+
+  <!-- modal -->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    modal
+  </h3>
+  <!-- systemDialog btn-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    systemDialog btn
+  </div>
+  <a class="c-modal-systemDialog__trigger modal-trigger" href="#systemDialog1">systemDialog</a>
+  <!-- systemDialog modal-->
+  <div id="systemDialog1" class="c-modal-systemDialog modal">
+    <div class="modal-content c-modal-content">
+      <p>本文</p>
+    </div>
+    <div class="modal-footer c-modal-footer">
+      <button class="o-btn-secondary waves-effect waves-blue modal-close">
+        按鈕
+      </button>
+      <button class="o-btn-primary waves-effect waves-blue modal-close">
+        按鈕
+      </button>
+    </div>
+  </div>
+
+  <!-- alert btn-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    alert btn
+  </div>
+
+  <a class="c-modal-alert__trigger modal-trigger" href="#alert1">alert</a>
+  <!-- alert modal-->
+  <div id="alert1" class="c-modal-alert modal">
+    <div class="c-modal-alert__content">
+      <div class="c-modal-title">
+        <img src="img/o-alert.svg" alt="" />
+        <div class="">刪除群組？</div>
+      </div>
+      <div class="modal-content c-modal-content">
+        <p>刪除後將無法回覆，是否刪除此群組？</p>
+      </div>
+      <div class="modal-footer c-modal-footer">
+        <button class="o-btn-secondary waves-effect waves-blue modal-close">
+          按鈕
+        </button>
+        <button class="o-btn-primary waves-effect waves-blue modal-close">
+          按鈕
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- modal-personAll -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    personAll
+  </div>
+  <div class="c-modal-personAll">
+    <div class="c-modal-content row">
+      <div class="c-modal-content__sidebar col s3">
+        <div class="c-modal-content__sidebar__user">
+          <div class="user__name">蘇紫瑜</div>
+          <div class="user__number">A9005 / M10</div>
+        </div>
+        <div class="c-modal-content__sidebar__time">
+          <div class="">區間工時 <span>17</span></div>
+          <div class="">累計工時 <span>123</span></div>
+          <button class="o-btn-primary waves-effect waves-blue">匯出</button>
+        </div>
+        <div class="c-modal-content__sidebar__months">
+          <div class="sidebar__months__item">
+            <div class="item__years">2020</div>
+            <div class="item__months">
+              <div class="is-active">09月</div>
+              <div class="">10月</div>
+              <div class="">11月</div>
+              <div class="">12月</div>
+            </div>
+          </div>
+          <div class="sidebar__months__item">
+            <div class="item__years">2021</div>
+            <div class="item__months">
+              <div class="">09月</div>
+              <div class="">10月</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-modal-content__calendar col s9">
+        <div class="c-modal-content__calendar__btn">
+          <img src="img/o-cross.svg" alt="" />
+        </div>
+        <div class="c-modal-content__calendar__tebs">
+          <div class="c-tabs">
+            <div class="c-tabs__content">
+              <ul class="c-tabs__item tabs">
+                <li class="c-tabs__item__link tab"><a href="#member">人員工時</a></li>
+                <li class="c-tabs__item__link tab"><a href="#department" class="active">部門委託工時</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="member" class="c-modal-content__calendar__content">
+          <div class="c-modal-content__calendar__title">2020 九月</div>
+          <!-- 單人月曆 -->
+          <div class="o-calendar">
+            <div class="o-calendar__week__title">
+              <div class="">週ㄧ</div>
+              <div class="">週二</div>
+              <div class="">週三</div>
+              <div class="">週四</div>
+              <div class="">週五</div>
+              <div class="">週六</div>
+              <div class="">週日</div>
+            </div>
+            <div class="o-calendar__week__itemgroup">
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">31</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date is-active">
+                  <div class="item__date__num">01</div>
+                  <div class="item__date__time">8</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">02</div>
+                  <div class="item__date__time">8</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-today">03</div>
+                  <div class="item__date__time">1</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">04</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">05</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">06</div>
+                  <div class=""></div>
+                </div>
+              </div>
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num">07</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">08</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">09</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">10</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">11</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">12</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">13</div>
+                  <div class=""></div>
+                </div>
+              </div>
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num">14</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">15</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">16</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">17</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">18</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">19</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">20</div>
+                  <div class=""></div>
+                </div>
+              </div>
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num">21</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">22</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">23</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">24</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">25</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">26</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">27</div>
+                </div>
+              </div>
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num">28</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">29</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">30</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">01</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">02</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">03</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">04</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="department" class="c-modal-content__calendar__content">
+          <div class="c-modal-content__list">
+            <div class="c-modal-content__list__title">U00</div>
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__title">
+                      國立臺北科技大學-本校圖書館入口網建置案國立臺北科技大學-本校圖書館入口網建置案口網建置案國立臺北科技大學-本校圖書館入口網建置案
+                    </div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="accordion-header__item__hour">
+                      <div class="accordion-header__item__hour__title">
+                        此月填入工時
+                      </div>
+                      <div class="accordion-header__item__hour__num">3</div>
+                    </div>
+                    <div class="o-accordion_plus collapsible-btn">
+                      <div class="plus-icon icon">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__title">
+                    <div class="col s2">填寫日期</div>
+                    <div class="col s3">工作階段</div>
+                    <div class="col s3">工作內容</div>
+                    <div class="col s2">時數</div>
+                    <div class="col s2">備註</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020.09.15</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020.09.15</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__title">
+                      國立臺北科技大學-本校圖書館入口網建置案
+                    </div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="accordion-header__item__hour">
+                      <div class="accordion-header__item__hour__title">
+                        此月填入工時
+                      </div>
+                      <div class="accordion-header__item__hour__num">3</div>
+                    </div>
+                    <div class="o-accordion_plus collapsible-btn">
+                      <div class="plus-icon icon">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__title">
+                    <div class="col s2">填寫日期</div>
+                    <div class="col s3">工作階段</div>
+                    <div class="col s3">工作內容</div>
+                    <div class="col s2">時數</div>
+                    <div class="col s2">備註</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020.09.15</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020.09.15</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="c-modal-content__list">
+            <div class="c-modal-content__list__title">P00</div>
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__title">
+                      國立臺北科技大學-本校圖書館入口網建置案
+                    </div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="accordion-header__item__hour">
+                      <div class="accordion-header__item__hour__title">
+                        此月填入工時
+                      </div>
+                      <div class="accordion-header__item__hour__num">3</div>
+                    </div>
+                    <div class="o-accordion_plus collapsible-btn">
+                      <div class="plus-icon icon">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__title">
+                    <div class="col s2">填寫日期</div>
+                    <div class="col s3">工作階段</div>
+                    <div class="col s3">工作內容</div>
+                    <div class="col s2">時數</div>
+                    <div class="col s2">備註</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020.09.15</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020.09.15</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s3">網站介面規劃與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal-personCalendar -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    personCalendar
+  </div>
+  <div class="c-modal-personCalendar">
+    <div class="c-modal-content row">
+      <div class="c-modal-content__sidebar col s3">
+        <div class="c-modal-content__sidebar__user">
+          <div class="user__name">蘇紫瑜</div>
+          <div class="user__number">A9005 / M10</div>
+        </div>
+        <div class="c-modal-content__sidebar__time">
+          <div class="">區間工時 <span>17</span></div>
+          <div class="">累計工時 <span>123</span></div>
+          <button class="o-btn-primary ">匯出</button>
+        </div>
+        <div class="c-modal-content__sidebar__months">
+          <div class="sidebar__months__item">
+            <div class="item__years">2020</div>
+            <div class="item__months">
+              <div class="is-active">09月</div>
+              <div class="">10月</div>
+              <div class="">11月</div>
+              <div class="">12月</div>
+            </div>
+          </div>
+          <div class="sidebar__months__item">
+            <div class="item__years">2021</div>
+            <div class="item__months">
+              <div class="">09月</div>
+              <div class="">10月</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-modal-content__calendar col s9">
+        <div class="c-modal-content__calendar__btn">
+          <img src="img/o-cross.svg" alt="" />
+        </div>
+        <div class="c-modal-content__calendar__tebs">
+          <div class="c-tabs">
+            <div class="c-tabs__content">
+              <ul class="c-tabs__item tabs">
+                <li class="c-tabs__item__link tab"><a class="active">人員工時</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="c-modal-content__calendar__content ">
+          <div class="c-modal-content__calendar__title">2020 九月</div>
+          <!-- 單人月曆 -->
+          <div class="o-calendar">
+            <div class="o-calendar__week__title">
+              <div class="">週ㄧ</div>
+              <div class="">週二</div>
+              <div class="">週三</div>
+              <div class="">週四</div>
+              <div class="">週五</div>
+              <div class="">週六</div>
+              <div class="">週日</div>
+            </div>
+            <div class="o-calendar__week__itemgroup">
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">31</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date is-active">
+                  <div class="item__date__num">01</div>
+                  <div class="item__date__time">8</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">02</div>
+                  <div class="item__date__time">8</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-today">03</div>
+                  <div class="item__date__time">1</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">04</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">05</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">06</div>
+                  <div class=""></div>
+                </div>
+              </div>
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num">07</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">08</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">09</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">10</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">11</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">12</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">13</div>
+                  <div class=""></div>
+                </div>
+              </div>
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num">14</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">15</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">16</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">17</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">18</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">19</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">20</div>
+                  <div class=""></div>
+                </div>
+              </div>
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num">21</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">22</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">23</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">24</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">25</div>
+                  <div class=""></div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">26</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">27</div>
+                </div>
+              </div>
+              <div class="o-calendar__week__item">
+                <div class="item__date">
+                  <div class="item__date__num">28</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">29</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num">30</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">01</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">02</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">03</div>
+                </div>
+                <div class="item__date">
+                  <div class="item__date__num is-no-this-months">04</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal-department -->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    department
+  </div>
+  <div class="c-modal-department">
+    <div class="c-modal-content row">
+      <div class="c-modal-content__sidebar col s3">
+        <div class="c-modal-content__sidebar__user">
+          <div class="user__name">蘇紫瑜</div>
+          <div class="user__number">A9005 / M10</div>
+        </div>
+        <div class="c-modal-content__sidebar__time">
+          <div class="">區間工時 <span>17</span></div>
+          <div class="">累計工時 <span>123</span></div>
+          <button class="o-btn-primary waves-effect waves-blue">匯出</button>
+        </div>
+        <div class="c-modal-content__sidebar__months">
+          <div class="sidebar__months__item">
+            <div class="item__years">2020</div>
+            <div class="item__months">
+              <div class="is-active">09月</div>
+              <div class="">10月</div>
+              <div class="">11月</div>
+              <div class="">12月</div>
+            </div>
+          </div>
+          <div class="sidebar__months__item">
+            <div class="item__years">2021</div>
+            <div class="item__months">
+              <div class="">09月</div>
+              <div class="">10月</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-modal-content__calendar col s9">
+        <div class="c-modal-content__calendar__btn">
+          <img src="img/o-cross.svg" alt="" />
+        </div>
+        <div class="c-modal-content__list">
+          <ul class="collapsible c-accordion-plan">
+            <li>
+              <div class="collapsible-header accordion-header">
+                <div class="accordion-header__item">
+                  <div class="header__item__title">
+                    國立臺北科技大學-本校圖書館入口網建置案
+                  </div>
+                </div>
+                <div class="accordion-header__item">
+                  <div class="accordion-header__item__hour">
+                    <div class="accordion-header__item__hour__title">
+                      此月填入工時
+                    </div>
+                    <div class="accordion-header__item__hour__num">3</div>
+                  </div>
+                  <div class="o-accordion_plus collapsible-btn">
+                    <div class="plus-icon icon">
+                      <div class="horizontal"></div>
+                      <div class="vertical"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body accordion-body">
+                <div class="row accordion-body__title">
+                  <div class="col s2">填寫日期</div>
+                  <div class="col s3">工作階段</div>
+                  <div class="col s3">工作內容</div>
+                  <div class="col s2">時數</div>
+                  <div class="col s2">備註</div>
+                </div>
+                <div class="row accordion-body__item">
+                  <div class="col s2">2020.09.15</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s2">4</div>
+                  <div class="col s2">5個樣板</div>
+                </div>
+                <div class="row accordion-body__item">
+                  <div class="col s2">2020.09.15</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s2">4</div>
+                  <div class="col s2">5個樣板</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible c-accordion-plan">
+            <li>
+              <div class="collapsible-header accordion-header">
+                <div class="accordion-header__item">
+                  <div class="header__item__title">
+                    國立臺北科技大學-本校圖書館入口網建置案
+                  </div>
+                </div>
+                <div class="accordion-header__item">
+                  <div class="accordion-header__item__hour">
+                    <div class="accordion-header__item__hour__title">
+                      此月填入工時
+                    </div>
+                    <div class="accordion-header__item__hour__num">3</div>
+                  </div>
+                  <div class="o-accordion_plus collapsible-btn">
+                    <div class="plus-icon icon">
+                      <div class="horizontal"></div>
+                      <div class="vertical"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body accordion-body">
+                <div class="row accordion-body__title">
+                  <div class="col s2">填寫日期</div>
+                  <div class="col s3">工作階段</div>
+                  <div class="col s3">工作內容</div>
+                  <div class="col s2">時數</div>
+                  <div class="col s2">備註</div>
+                </div>
+                <div class="row accordion-body__item">
+                  <div class="col s2">2020.09.15</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s2">4</div>
+                  <div class="col s2">5個樣板</div>
+                </div>
+                <div class="row accordion-body__item">
+                  <div class="col s2">2020.09.15</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s2">4</div>
+                  <div class="col s2">5個樣板</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible c-accordion-plan">
+            <li>
+              <div class="collapsible-header accordion-header">
+                <div class="accordion-header__item">
+                  <div class="header__item__title">
+                    國立臺北科技大學-本校圖書館入口網建置案
+                  </div>
+                </div>
+                <div class="accordion-header__item">
+                  <div class="accordion-header__item__hour">
+                    <div class="accordion-header__item__hour__title">
+                      此月填入工時
+                    </div>
+                    <div class="accordion-header__item__hour__num">3</div>
+                  </div>
+                  <div class="o-accordion_plus collapsible-btn">
+                    <div class="plus-icon icon">
+                      <div class="horizontal"></div>
+                      <div class="vertical"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body accordion-body">
+                <div class="row accordion-body__title">
+                  <div class="col s2">填寫日期</div>
+                  <div class="col s3">工作階段</div>
+                  <div class="col s3">工作內容</div>
+                  <div class="col s2">時數</div>
+                  <div class="col s2">備註</div>
+                </div>
+                <div class="row accordion-body__item">
+                  <div class="col s2">2020.09.15</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s2">4</div>
+                  <div class="col s2">5個樣板</div>
+                </div>
+                <div class="row accordion-body__item">
+                  <div class="col s2">2020.09.15</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s3">網站介面規劃與設計</div>
+                  <div class="col s2">4</div>
+                  <div class="col s2">5個樣板</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- dropdown  planContent-->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    dropdown
+  </h3>
+  <!-- dropdown-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    planContent
+  </div>
+  <div class="row">
+    <div class="input-field c-dropdown-planContent col s">
+      <select class="c-dropdown-plan-select">
+        <optgroup label="籌備中">
+          <option value="1">
+            2020智慧空間管理理系2020智慧空間管理理慧空慧空慧空慧
+          </option>
+          <option value="2">2020智慧空間管理理系</option>
+          <option value="3">2020智慧空間管理理系慧空慧空</option>
+          <option value="4">2020智慧空間管理理慧空慧空慧空慧空系</option>
+        </optgroup>
+        <optgroup label="執行中">
+          <option value="5">2020智慧空間管理理慧空系</option>
+          <option value="6">2020智慧空間管理理慧空系</option>
+          <option value="7">2020智慧空間管理理慧空系</option>
+          <option value="8">2020智慧空間管理理慧空系</option>
+        </optgroup>
+        <optgroup label="保固中">
+          <option value="9">2020智慧空間管理理慧空系</option>
+          <option value="10">2020智慧空間管理理慧空慧空慧空慧空系</option>
+          <option value="11">2020智慧空間管理理系慧空慧空</option>
+          <option value="12">2020智慧空間管理理慧空慧空慧空慧空系</option>
+        </optgroup>
+      </select>
+    </div>
+  </div>
+  <!-- dropdown plan-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    plan
+  </div>
+  <div class="row">
+    <div class="input-field c-dropdown-plan col">
+      <select class="c-dropdown-plan-select">
+        <option value="1">1.1-工作階段或工作內容</option>
+        <option value="2">1.1-工作階段或工作內容</option>
+        <option value="3">1.1-工作階段或工作內容</option>
+        <option value="4">1.1-工作階段或工作內容</option>
+        <option value="5">1.1-工作階段或工作內容</option>
+        <option value="6">1.1-工作階段或工作內容</option>
+        <option value="7">1.1-工作階段或工作內容</option>
+        <option value="8">1.1-工作階段或工作內容</option>
+        <option value="9">1.1-工作階段或工作內容</option>
+        <option value="10">1.1-工作階段或工作內容</option>
+      </select>
+    </div>
+  </div>
+  <!-- dropdown status-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    status
+  </div>
+  <div class="row">
+    <div class="input-field c-dropdown-status col">
+      <select class="c-dropdown-plan-select">
+        <option value="1">全部(預設)</option>
+        <option value="2">籌備中</option>
+        <option value="3">執行中</option>
+        <option value="4">保固中</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- dropdown status-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    general
+  </div>
+  <div class="row">
+    <div class="input-field c-dropdown-general col">
+      <select class="c-dropdown-plan-select">
+        <option value="1">全部(預設)</option>
+        <option value="2">A/專案</option>
+        <option value="3">B/產品發展</option>
+        <option value="4">C/服務</option>
+        <option value="5">D/技術研究</option>
+        <option value="6">E/共通計畫</option>
+        <option value="7">F/小型計畫</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- dropdown department-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    department
+  </div>
+  <div class="row">
+    <div class="input-field c-dropdown-department col">
+      <select class="c-dropdown-plan-select">
+        <option value="1">U20-使用者經驗用者用者企劃部</option>
+        <option value="2">U20-使用者經驗企劃部</option>
+        <option value="3">U20-使用者經驗用者用者企劃部</option>
+        <option value="4">U20-使用者經驗企劃部</option>
+        <option value="5">U20-使用者經驗用者用者企劃部</option>
+        <option value="6">U20-使用者經驗企劃部</option>
+        <option value="7">U20-使用者經驗用者用者企劃部</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- dropdown departmentCheck-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    departmentCheck
+  </div>
+
+  <div class=" c-dropdown-departmentCheck pop-modal">
+    <div class="dropdown-input c-dropdown__input pop-btn">
+      <input type="text">
+    </div>
+    <div class="dropdown-modal c-dropdown__modal pop-content">
+      <div class="c-dropdown__title">
+        <div class="">
+          <div class="c-dropdown__title__all ">全選</div>
+        </div>
+      </div>
+      <div class="c-dropdown__content__height">
+        <ul class="c-dropdown__content">
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-使用者經驗企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-U20-使用者經驗用者用者企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-使用者經驗企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-U20-使用者經驗用者用者企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-使用者經驗企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-U20-使用者經驗用者用者企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-使用者經驗企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-U20-使用者經驗用者用者企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-使用者經驗企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-U20-使用者經驗用者用者企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-使用者經驗企劃部</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>U20-U20-使用者經驗用者用者企劃部</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="c-dropdown__footer">
+        <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+        <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+      </div>
+    </div>
+  </div>
+  <!-- dropdown member-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    member
+  </div>
+  <div class="c-dropdown-member pop-modal">
+    <div class="dropdown-input c-dropdown__input pop-btn">
+      <input type="text">
+    </div>
+    <div class="c-dropdown__modal pop-content">
+      <div class="c-dropdown__title">
+        <div class="">
+          <div class="c-dropdown__title__all ">全選</div>
+        </div>
+      </div>
+      <div class="c-dropdown__content__height">
+        <ul class="c-dropdown__content">
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>王小明</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="c-dropdown__footer">
+        <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+        <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="
+      font-size: 26px;
+      margin: 2% 0;
+      padding: 1% 2%;
+      background: #1d5299;
+      color: #fff;
+    ">
+    popover
+  </h3>
+  <!-- popover-->
+
+  <!-- popover wbsEdit-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    wbsEdit
+  </div>
+  <div class="row">
+    <div class="c-popover-wbsEdit pop-modal">
+      <span class="c-popover__btn pop-btn">wbsEdit</span>
+      <ul class="c-popover__content pop-content">
+        <li>刪除</li>
+        <li>複製</li>
+        <li>向下新增工作階段</li>
+        <li>向下新增工作內容</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- popover perspective-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    perspective
+  </div>
+  <div class="row">
+    <div class="c-popover-perspective pop-modal">
+      <span class="c-popover__btn pop-btn">perspective</span>
+      <div class="c-popover__content pop-content">
+        <div class="c-popover__text">
+          <div class="">T00</div>
+          <div class="">
+            資訊與服務整合事業處
+          </div>
+        </div>
+        <div class="c-popover__footer">
+          <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
+            切換其他部門
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- popover checkPoint-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    checkPoint
+  </div>
+  <div class="row">
+    <div class="c-popover-checkPoint pop-modal">
+      <span class="c-popover__btn pop-btn">checkPoint</span>
+      <ul class="c-popover__content pop-content">
+        <li>刪除</li>
+        <li>複製</li>
+      </ul>
+    </div>
+  </div>
+  <!-- popover filterS-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    filterS
+  </div>
+  <div class="row">
+    <div class="c-popover-filterS pop-modal">
+      <span class="c-popover__btn pop-btn">filterS</span>
+      <ul class="c-popover__content pop-content">
+        <li>區間工時低到高</li>
+        <li>區間工時高到低</li>
+      </ul>
+    </div>
+  </div>
+  <!-- popover filterM-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    filterM
+  </div>
+  <div class="row">
+    <div class="c-popover-filterM pop-modal">
+      <span class="c-popover__btn pop-btn">filterM</span>
+      <ul class="c-popover__content pop-content">
+        <li>起始時間近到遠</li>
+        <li>總工時低到高</li>
+        <li>總工時高到低</li>
+      </ul>
+    </div>
+  </div>
+  <!-- popover filterL-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    filterL
+  </div>
+  <div class="row">
+    <div class="c-popover-filterL pop-modal">
+      <span class="c-popover__btn pop-btn">filterL</span>
+      <ul class="c-popover__content pop-content">
+        <li>起始時間近到遠</li>
+        <li>區間工時成本％低到高</li>
+        <li>區間工時成本％高到低</li>
+        <li>累計工時成本％低到高</li>
+        <li>累計工時成本％高到低</li>
+        <li>全案工時成本％低到高</li>
+        <li>全案工時成本％高到低</li>
+      </ul>
+    </div>
+  </div>
+  <!-- datePicker-->
+  <h3 style="
+  font-size: 26px;
+  margin: 2% 0;
+  padding: 1% 2%;
+  background: #1d5299;
+  color: #fff;
+">
+    datePicker
+  </h3>
+  <!-- datePicker days-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    days
+  </div>
+  <div class="row">
+    <div class="c-datePicker-days pop-modal">
+      <div class="c-datePicker__input pop-btn">
+        <div class="o-input-div"></div>
+      </div>
+      <div class="c-datePicker__modal pop-content">
+        <div class="c-datePicker__group">
+          <div class="c-datePicker__item">
+            <div class="c-datePicker__yearPicker">
+              <img src="img/o-arrowLeft-blue.svg" alt="">
+              <div class="">2020 7月</div>
+              <div class=""></div>
+            </div>
+            <div class="c-datePicker__content">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>日</th>
+                    <th>一</th>
+                    <th>二</th>
+                    <th>三</th>
+                    <th>四</th>
+                    <th>五</th>
+                    <th>六</th>
+                  </tr>
+                  <tr>
+                    <td class="is-no-this-month">28</td>
+                    <td class="is-no-this-month">29</td>
+                    <td class="is-no-this-month">30</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="is-select-day is-select-range-first">3</td>
+                    <td class="is-no-work is-select-range-lest">4</td>
+                  </tr>
+                  <tr>
+                    <td class="is-no-work is-select-range-first">5</td>
+                    <td class="is-select-range">6</td>
+                    <td class="is-select-range">7</td>
+                    <td class="is-select-range">8</td>
+                    <td class="is-select-range">9</td>
+                    <td class="is-select-day is-select-range-lest">10</td>
+                    <td class="is-no-work">11</td>
+                  </tr>
+                  <tr>
+                    <td class="is-no-work">12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td class="is-no-work">18</td>
+                  </tr>
+                  <tr>
+                    <td class="is-no-work">19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td class="is-no-work">25</td>
+                  </tr>
+                  <tr>
+                    <td class="is-no-work">26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class="is-no-work">1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="c-datePicker__item">
+            <div class="c-datePicker__yearPicker">
+              <div class=""></div>
+              <div class="">2020 8月</div>
+              <img src="img/o-arrowRight-blue.svg" alt="">
+            </div>
+            <div class="c-datePicker__content">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>日</th>
+                    <th>一</th>
+                    <th>二</th>
+                    <th>三</th>
+                    <th>四</th>
+                    <th>五</th>
+                    <th>六</th>
+                  </tr>
+                  <tr>
+                    <td class="is-no-this-month">28</td>
+                    <td class="is-no-this-month">29</td>
+                    <td class="is-no-this-month">30</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="">3</td>
+                    <td class="is-no-work">4</td>
+                  </tr>
+                  <tr>
+                    <td class="is-no-work">5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td class="is-no-work">11</td>
+                  </tr>
+                  <tr>
+                    <td class="is-no-work">12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td class="is-no-work">18</td>
+                  </tr>
+                  <tr>
+                    <td class="is-no-work">19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td class="is-no-work">25</td>
+                  </tr>
+                  <tr>
+                    <td class="is-no-work">26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class="is-no-work">1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="c-datePicker__footer">
+          <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- datePicker day-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    day
+  </div>
+  <div class="row">
+    <div class="c-datePicker-day pop-modal">
+      <div class="c-datePicker__input pop-btn">
+        <div class="o-input-div"></div>
+      </div>
+      <div class="c-datePicker__modal pop-content">
+        <div class="c-datePicker__yearPicker">
+          <img src="img/o-arrowLeft-blue.svg" alt="">
+          <div class="">2020 8月</div>
+          <img src="img/o-arrowRight-blue.svg" alt="">
+        </div>
+        <div class="c-datePicker__content">
+          <table>
+            <tbody>
+              <tr>
+                <th>日</th>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+                <th>四</th>
+                <th>五</th>
+                <th>六</th>
+              </tr>
+              <tr>
+                <td class="is-no-this-month">28</td>
+                <td class="is-no-this-month">29</td>
+                <td class="is-no-this-month">30</td>
+                <td>1</td>
+                <td>2</td>
+                <td class="is-select-day">3</td>
+                <td class="is-no-work">4</td>
+              </tr>
+              <tr>
+                <td class="is-no-work">5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td class="is-no-work">11</td>
+              </tr>
+              <tr>
+                <td class="is-no-work">12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td class="is-no-work">18</td>
+              </tr>
+              <tr>
+                <td class="is-no-work">19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td class="is-no-work">25</td>
+              </tr>
+              <tr>
+                <td class="is-no-work">26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td class="is-no-work">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="c-datePicker__footer">
+          <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- datePicker month-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    month
+  </div>
+  <div class="row">
+    <div class="c-datePicker-month pop-modal">
+      <div class="c-datePicker__input pop-btn">
+        <div class="o-input-div"></div>
+      </div>
+      <div class="c-datePicker__modal pop-content">
+        <div class="c-datePicker__yearPicker">
+          <img src="img/o-arrowLeft-blue.svg" alt="">
+          <div class="">2020</div>
+          <img src="img/o-arrowRight-blue.svg" alt="">
+        </div>
+        <ul class="c-datePicker__content">
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>01月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>02月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>03月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>04月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>05月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>06月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>07月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>08月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>09月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>10月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>11月</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="with-gap" name="group1" type="radio" />
+              <span>12月</span>
+            </label>
+          </li>
+        </ul>
+        <div class="c-datePicker__footer">
+          <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- datePicker months-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    months
+  </div>
+  <div class="row">
+    <div class="c-datePicker-months pop-modal">
+      <div class="c-datePicker__input pop-btn">
+        <div class="o-input-div"></div>
+      </div>
+      <div class="c-datePicker__modal pop-content">
+        <div class="c-datePicker__group">
+          <div class="c-datePicker__item">
+            <div class="c-datePicker__yearPicker">
+              <img src="img/o-arrowLeft-blue.svg" alt="">
+              <div class="">2020</div>
+              <div class=""></div>
+            </div>
+            <div class="c-datePicker__content">
+              <table>
+                <tr>
+                  <td>1月</td>
+                  <td>2月</td>
+                  <td>3月</td>
+                </tr>
+                <tr>
+                  <td>4月</td>
+                  <td>5月</td>
+                  <td>6月</td>
+                </tr>
+                <tr>
+                  <td>7月</td>
+                  <td>8月</td>
+                  <td>9月</td>
+                </tr>
+                <tr>
+                  <td>10月</td>
+                  <td>11月</td>
+                  <td>12月</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="c-datePicker__item">
+            <div class="c-datePicker__yearPicker">
+              <div class=""></div>
+              <div class="">2021</div>
+              <img src="img/o-arrowRight-blue.svg" alt="">
+            </div>
+            <div class="c-datePicker__content">
+              <table>
+                <tr>
+                  <td>1月</td>
+                  <td class="is-select-day is-select-range-first">2月</td>
+                  <td class="is-select-range-lest">3月</td>
+                </tr>
+                <tr>
+                  <td class="is-select-range-first">4月</td>
+                  <td class="is-select-range">5月</td>
+                  <td class="is-select-range-lest">6月</td>
+                </tr>
+                <tr>
+                  <td class="is-select-range-first">7月</td>
+                  <td class="is-select-range">8月</td>
+                  <td class="is-select-day  is-select-range-lest">9月</td>
+                </tr>
+                <tr>
+                  <td>10月</td>
+                  <td>11月</td>
+                  <td>12月</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="c-datePicker__footer">
+          <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--工時系統首頁-->
+  <h3 style="
+        font-size: 26px;
+        margin: 2% 0;
+        padding: 1% 2%;
+        background: #1d5299;
+        color: #fff;
+      ">
+    填寫工時頁
+  </h3>
+  <!-- write days-->
+  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
+    填寫工時頁
+  </div>
+  <!-- 工時系統首頁-->
+  <div class="c-writeHours">
+    <div class="c-writeHours-title">
+      <div class="c-writeHours-title__item is-no-this-months">
+        <div class="c-writeHours-title__item__date">
+          <div>08/31</div><span>ㄧ</span>
+        </div>
+        <div class="c-writeHours-title__item__hours">
+          <div class="text">已填<br>時數</div>
+          <div class="hours">8</div>
+        </div>
+        <div class="c-writeHours-title__content"></div>
+      </div>
+      <div class="c-writeHours-title__item">
+        <div class="c-writeHours-title__item__date">
+          <div class="">09/01 </div><span>二</span>
+        </div>
+        <div class="c-writeHours-title__item__hours">
+          <div class="text">已填<br>時數</div>
+          <div class="hours"><img src="img/o-dayoff.svg" alt=""></div>
+        </div>
+        <div class="c-writeHours-title__content">
+          <div class="">請假8小時</div>
+        </div>
+      </div>
+      <div class="c-writeHours-title__item">
+        <div class="c-writeHours-title__item__date">09/01 <span>三</span></div>
+        <div class="c-writeHours-title__item__hours">
+          <div class="text">已填<br>時數</div>
+          <div class="hours">0</div>
+        </div>
+        <div class="c-writeHours-title__content">
+          <div class="c-writeHours-title__tag">中秋節</div>
+        </div>
+      </div>
+      <div class="c-writeHours-title__item ">
+        <div class="c-writeHours-title__item__date">09/03 <span>四</span></div>
+        <div class="c-writeHours-title__item__hours">
+          <div class="text">已填<br>時數</div>
+          <div class="hours">3 <span>.5</span></div>
+        </div>
+        <div class="c-writeHours-title__content">
+          <div class="">請假4小時</div>
+          <div class="text-danger">尚有0.5小時未填</div>
+        </div>
+      </div>
+      <div class="c-writeHours-title__item is-today-tag">
+        <div class="c-writeHours-title__item__date">09/04 <span>五</span></div>
+        <div class="c-writeHours-title__item__hours">
+          <div class="text">已填<br>時數</div>
+          <div class="hours">0</div>
+        </div>
+        <div class="c-writeHours-title__content ">
+          <div class="text-danger">尚有8小時未填</div>
+        </div>
+      </div>
+      <div class="c-writeHours-title__item is-active">
+        <div class="c-writeHours-title__item__date">09/05 <span>六</span></div>
+        <div class="c-writeHours-title__item__hours">
+          <div class="text">已填<br>時數</div>
+          <div class="hours">0</div>
+        </div>
+        <div class="c-writeHours-title__content">
+          <div class="">未開放填寫</div>
+        </div>
+      </div>
+      <div class="c-writeHours-title__item">
+        <div class="c-writeHours-title__item__date">09/06 <span>日</span></div>
+        <div class="c-writeHours-title__item__hours">
+          <div class="text">已填<br>時數</div>
+          <div class="hours">0</div>
+        </div>
+        <div class="c-writeHours-title__content">
+          <div class="">未開放填寫</div>
+        </div>
+      </div>
+    </div>
+    <!-- 下半部 -->
+    <div class="c-writeHours-content">
+      <div class="c-writeHours-content__select">
+        <div class="">
+          <div class="input-title">計劃名稱</div>
+          <div class="input-field c-dropdown-planContent col ">
+            <select class="c-dropdown-plan-select">
+              <option value="" disabled selected>請選擇計劃名稱</option>
+              <optgroup label="籌備中">
+                <option value="1">
+                  2020智慧空間管理理系2020智慧空間管理理慧空慧空慧空慧
+                </option>
+                <option value="2">2020智慧空間管理理系</option>
+                <option value="3">2020智慧空間管理理系慧空慧空</option>
+                <option value="4">2020智慧空間管理理慧空慧空慧空慧空系</option>
+              </optgroup>
+              <optgroup label="執行中">
+                <option value="5">2020智慧空間管理理慧空系</option>
+                <option value="6">2020智慧空間管理理慧空系</option>
+                <option value="7">2020智慧空間管理理慧空系</option>
+                <option value="8">2020智慧空間管理理慧空系</option>
+              </optgroup>
+              <optgroup label="保固中">
+                <option value="9">2020智慧空間管理理慧空系</option>
+                <option value="10">2020智慧空間管理理慧空慧空慧空慧空系</option>
+                <option value="11">2020智慧空間管理理系慧空慧空</option>
+                <option value="12">2020智慧空間管理理慧空慧空慧空慧空系</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="">
+          <div class="input-title">工作階段</div>
+          <div class="input-field c-dropdown-plan col">
+            <select class="c-dropdown-plan-select">
+              <option value="" disabled selected>請選擇工作階段</option>
+              <option value="1">1.1-工作階段或工作內容</option>
+              <option value="2">1.1-工作階段或工作內容</option>
+              <option value="3">1.1-工作階段或工作內容</option>
+              <option value="4">1.1-工作階段或工作內容</option>
+              <option value="5">1.1-工作階段或工作內容</option>
+              <option value="6">1.1-工作階段或工作內容</option>
+              <option value="7">1.1-工作階段或工作內容</option>
+              <option value="8">1.1-工作階段或工作內容</option>
+              <option value="9">1.1-工作階段或工作內容</option>
+              <option value="10">1.1-工作階段或工作內容</option>
+            </select>
+          </div>
+        </div>
+        <div class="">
+          <div class="input-title">工作內容</div>
+          <div class="input-field c-dropdown-plan col">
+            <select class="c-dropdown-plan-select">
+              <option value="" disabled selected>請選擇工作內容</option>
+              <option value="1">1.1-工作階段或工作內容</option>
+              <option value="2">1.1-工作階段或工作內容</option>
+              <option value="3">1.1-工作階段或工作內容</option>
+              <option value="4">1.1-工作階段或工作內容</option>
+              <option value="5">1.1-工作階段或工作內容</option>
+              <option value="6">1.1-工作階段或工作內容</option>
+              <option value="7">1.1-工作階段或工作內容</option>
+              <option value="8">1.1-工作階段或工作內容</option>
+              <option value="9">1.1-工作階段或工作內容</option>
+              <option value="10">1.1-工作階段或工作內容</option>
+            </select>
+            <!-- <label>工作階段</label> -->
+          </div>
+        </div>
+        <div class="hoursInput">
+          <div class="input-title">時數</div>
+          <div class="">
+            <input class="" type="text">
+          </div>
+        </div>
+        <div class="otherInput">
+          <div class="input-title">備註</div>
+          <div class="">
+            <input class="" type="text">
+          </div>
+        </div>
+        <button class="o-btn-primary waves-effect waves-blue">按鈕</button>
+      </div>
+      <div class=""></div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- <script src="https://rawgit.com/bevacqua/dragula/master/dist/dragula.js"></script> -->
+
+  <script src="js/materialize.js"></script>
+  <script src="js/compontent.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

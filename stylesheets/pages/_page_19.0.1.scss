@@ -1,0 +1,118 @@
+#membertime{
+    .l-main-tabs {
+        margin-bottom: 5px;
+    }
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
+    }
+} 
+.l-main-content{
+   .c-card-manhourSofar{
+    margin: 0 0.5rem 2.5rem 0.2rem;
+   } 
+   .l-main-content-text {
+       .l-main-content-text__title{
+        font-size: $font-size-l;
+        font-family: $font-family;
+        font-weight: bolder;
+        margin-bottom:1rem ;
+       }
+       .l-main-content-text__ListTitle{
+        @extend .l-main-content-text__title;
+        margin-bottom:0.3rem ;
+        margin-right: 1rem;
+       }
+
+   }
+}
+
+.change-card-to-list {
+    .l-main-content-item__listTitle {
+        max-width: 2560px;
+        .listTitle__team{
+            width: 10%;
+        }
+        .listTitle__userNum{
+            width: 10%;
+        }
+        .listTitle__user{
+            width: 10%;
+        }
+        .listTitle__englishName{
+            width: 50%;
+        }
+        .listTitle__workTime{
+            width: 10%;
+        }
+        .listTitle__addTime{
+            width: 10%;
+        }
+
+    }
+    .c-card-manhourSofar{
+        border-bottom: 1px solid $sec2;
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+        max-width: 2560px;
+        margin: 0;
+        padding: 20px 0px 20px 3rem;
+        display: flex;
+        .c-card-manhourSofar__userName{
+            display: none;
+        }
+        .c-card-manhourSofar__englishName{
+            display: none;
+        }
+        .c-card__userInformation{
+            display: flex;
+           align-items: center;
+            width: 10%;
+            border:0;
+            margin:0;
+            .js-c-card__userNumber{
+                display: none;
+            }
+        }
+        .js-c-card__appendUserName{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            h2{
+                font-size: 16px;
+                font-family:$font-family; 
+                font-weight: 400; 
+                width: 16.66666%;
+            }
+            h3{
+                font-size: 16px;
+                font-family:$font-family; 
+                font-weight: 400;
+                width: 83.33333%; 
+            }
+        }
+        .c-card__content{
+            margin:0;
+            display: flex;
+            width: 20%;
+            .c-card__item{
+                width: 50%;
+                margin: 0;
+                .c-card__item__title{
+                    display: none;
+                }
+                .c-card__item__time{
+                    margin-left: 0.3rem;
+                    font-size: 16px;
+                    font-family:$font-family; 
+                    font-weight: 400;
+                }
+            }
+        }
+     
+    }
+}

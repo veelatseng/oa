@@ -1,0 +1,48 @@
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: .8;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .col{
+    .c-dropdown-general{
+      .select-wrapper{
+        height: 3rem;
+      }
+      .c-dropdown-member{
+        width: 300px;
+      }
+     
+    }
+    
+  }
+
+
+}
+
+.gu-hide {
+  display: none !important
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: .2;
+  display: flex;
+  .col{
+    .c-dropdown-general{
+      height: 3rem;
+    }
+    .c-dropdown-member{
+      width: 300px;
+    }
+  }
+}
